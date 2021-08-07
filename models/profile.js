@@ -1,11 +1,6 @@
 import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
-
-export {
-    Profile,
-}
-
 const profileSchema = new Schema({
     displayName: {
         type: String,
@@ -17,7 +12,11 @@ const profileSchema = new Schema({
     
 }, {
     timestamps: true
-   
+    
 })
 
 const Profile = mongoose.model("Profile", profileSchema)
+
+export {
+    Profile,
+}

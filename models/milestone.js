@@ -7,7 +7,7 @@ const commentSchema = new Schema({
         required: true
     },
     author: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "Profile",
         required: true
     },
@@ -17,6 +17,10 @@ const commentSchema = new Schema({
 })
 
 const milestoneSchema = new Schema({
+    parentSkill: {
+        type: Schema.Types.ObjectId,
+        ref: 'Skill'
+    },
     title: {
         type: String,
         required: true
@@ -30,7 +34,7 @@ const milestoneSchema = new Schema({
         default: false
     },
     addedBy: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Profile'
     },
     comments: [commentSchema]

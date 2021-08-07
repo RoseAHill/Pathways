@@ -6,7 +6,7 @@ const router = Router()
 
 // public routes
 
-
+router.get('/', )
 
 
 //protected routes
