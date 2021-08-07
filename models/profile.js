@@ -14,8 +14,7 @@ const profileSchema = new Schema({
     avatar: {
         type: String
     },
-    joinedPaths: [{type: mongoose.Schema.Types.ObjectId, ref: "Path", required: false}],
-    completedPaths: [{type: mongoose.Schema.Types.ObjectId, ref: "Path", required: false}],
+    
 }, {
     timestamps: true
    
