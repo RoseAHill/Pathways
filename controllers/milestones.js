@@ -1,5 +1,5 @@
 import { User } from "../models/user"
-import { Path } from "../models/path"
+import { Milestone } from "../models/milestone.js"
 import { Profile } from "../models/profile"
 
 const create = async (req, res) => {

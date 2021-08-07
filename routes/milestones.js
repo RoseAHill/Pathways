@@ -1,6 +1,6 @@
 import { Router } from "express"
 import { decodeUserFromToken, checkAuth } from "../middleware/auth"
-import * as pathCtrl from "../controllers/paths.js"
+import * as milestoneCtrl from "../controllers/milestones.js"
 
 const router = Router()
 
@@ -10,6 +10,7 @@ const router = Router()
 
 
 //protected routes
+router.use(decodeUserFromToken)
 
 
 
