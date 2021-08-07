@@ -8,6 +8,12 @@ const router = Router()
 
 router.get("/", pathCtrl.index)
 
+// Protected Routers
+
+router.use(decodeUserFromToken)
+
+router.post('/', pathCtrl.create)
+
 
 export {
   router

@@ -9,7 +9,6 @@ const profileSchema = new Schema({
     avatar: {
         type: String
     },
-    
 }, {
     timestamps: true
     
