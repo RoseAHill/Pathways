@@ -1,6 +1,6 @@
 import { User } from '../models/user.js'
 import jwt from 'jsonwebtoken'
-import { Profile } from "../models/profile"
+import { Profile } from "../models/profile.js"
 
 export {
   signup,

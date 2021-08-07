@@ -1,6 +1,6 @@
 import { Router } from "express"
-import { decodeUserFromToken, checkAuth } from "../middleware/auth"
-import * as milestoneCtrl from "../controllers/milestones.js"
+import { decodeUserFromToken, checkAuth } from "../middleware/auth.js"
+// import * as milestoneCtrl from "../controllers/milestones.js"
 
 const router = Router()
 
@@ -15,8 +15,7 @@ router.use(decodeUserFromToken)
 
 
 
-//paths
-router.get("/", checkAuth, pathCtrl.create)
+//milestones
 
 
 
