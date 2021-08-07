@@ -21,7 +21,7 @@ const milestoneSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Skill'
     },
-    title: {
+    milestoneName: {
         type: String,
         required: true
     },

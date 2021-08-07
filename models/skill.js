@@ -4,10 +4,12 @@ const Schema = mongoose.Schema
 const skillSchema = new Schema({
   parentPath: {
     type: Schema.Types.ObjectId,
-    ref: "Path"
+    ref: "Path",
+    required: true,
   },
   skillName: {
-    type: String
+    type: String,
+    required: true
   },
   milestones: [{
     type: Schema.Types.ObjectId,
