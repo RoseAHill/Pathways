@@ -23,7 +23,14 @@ function checkAuth(req, res, next) {
 	return req.user ? next() : res.status(401).json({ msg: 'Not Authorized' })
 }
 
+// ISLOGGEDIN MIDDLEWARE
+function isLoggedIn(req, res, next){
+	if (req.isAuthenticated()) return next()
+	res.redirect("/")
+}
+
 export {
   decodeUserFromToken,
-  checkAuth
+  checkAuth,
+  isLoggedIn
 }
