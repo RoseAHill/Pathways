@@ -1,24 +1,15 @@
 import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
-const skillSchema = new Schema({
-  skillName: {
-    type: String
-  },
-  milestones: {
-    type: Schema.Types.ObjectId,
-    ref: "Milestone"
-  }
-})
-
 const pathSchema = new Schema({
   title: {
     type: String,
     required: true
   },
-  skills: {
-    type: [skillSchema],
-  }
+  skills: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Skill'
+  }]
 }, {
   timestamps: true 
 })

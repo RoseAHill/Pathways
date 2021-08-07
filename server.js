@@ -8,8 +8,9 @@ import cors from 'cors'
 import { router as usersRouter } from './routes/users.js'
 import { router as authRouter } from './routes/auth.js'
 // milestone router
-import {router as milestonesRouter} from "./routes/milestones.js"
 import {router as pathsRouter} from "./routes/paths.js"
+import {router as skillsRouter} from "./routes/skills.js"
+import {router as milestonesRouter} from "./routes/milestones.js"
 
 import './config/database.js'
 
@@ -23,9 +24,9 @@ app.use(express.json())
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 // USE ROUTES ADDED
-app.use("/api/milestones", milestonesRouter)
-
 app.use("/api/paths", pathsRouter)
+app.use("/api/skills", skillsRouter)
+app.use("/api/milestones", milestonesRouter)
 
 
 app.get('/*', function (req, res) {
