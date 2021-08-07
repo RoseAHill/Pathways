@@ -23,7 +23,7 @@ const milestoneSchema = new Schema({
         required: true
     },
    description: String,
-   completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
+   completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: false}],
 }, { 
     timestamps: true
 
@@ -34,7 +34,7 @@ title: {
     type: String,
     required: true,
 },
-completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
+completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: false}],
 milestones: [milestoneSchema],
 }, {
     timestamps: true
@@ -50,7 +50,7 @@ const pathSchema = new Schema({
     skills: [skillSchema],
     author:  {type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
     comments: [commentSchema],
-    completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
+    completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: false}],
 }, {
     timestamps: true
 
