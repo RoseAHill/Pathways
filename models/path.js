@@ -10,7 +10,10 @@ content: {
     type: String,
     requred: true
 },
-author: {type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}
+author: {type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
+}, 
+{
+    timestamps: true
 
 })
 
@@ -20,7 +23,10 @@ const milestoneSchema = new Schema({
         required: true
     },
    description: String,
-   completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}]
+   completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
+}, { 
+    timestamps: true
+
 })
 
 const skillSchema = new Schema({
@@ -29,7 +35,10 @@ title: {
     required: true,
 },
 completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
-milestones: [milestoneSchema]
+milestones: [milestoneSchema],
+}, {
+    timestamps: true
+
 
 })
 
@@ -41,7 +50,10 @@ const pathSchema = new Schema({
     skills: [skillSchema],
     author:  {type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
     comments: [commentSchema],
-    completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}]
+    completedUsers: [{type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true}],
+}, {
+    timestamps: true
+
 })
 
 const Path = mongoose.model("Path", pathSchema)

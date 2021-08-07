@@ -15,7 +15,9 @@ const profileSchema = new Schema({
         type: String
     },
     joinedPaths: [{type: mongoose.Schema.Types.ObjectId, ref: "Path", required: true}],
-    completedPaths: [{type: mongoose.Schema.Types.ObjectId, ref: "Path", required: true}]
+    completedPaths: [{type: mongoose.Schema.Types.ObjectId, ref: "Path", required: true}],
+}, {
+    timestamps: true
    
 })
 
