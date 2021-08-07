@@ -24,10 +24,9 @@ app.use(express.json())
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 // USE ROUTES ADDED
-app.use("/api/milestones", milestonesRouter)
-
 app.use("/api/paths", pathsRouter)
 app.use("/api/skills", skillsRouter)
+app.use("/api/milestones", milestonesRouter)
 
 
 app.get('/*', function (req, res) {

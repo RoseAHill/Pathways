@@ -11,6 +11,9 @@ const commentSchema = new Schema({
         ref: "Profile",
         required: true
     },
+    refLink: {
+        type: String
+    }
 }, {
     timestamps: true
     
