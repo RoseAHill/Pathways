@@ -21,6 +21,8 @@ app.use(express.json())
 
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
+// USE ROUTES ADDED
+app.use("/api/paths", pathsRouter)
 
 
 app.get('/*', function (req, res) {

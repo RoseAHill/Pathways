@@ -1,5 +1,6 @@
 import { User } from '../models/user.js'
 import jwt from 'jsonwebtoken'
+import { Profile } from "../models/profile"
 
 export {
   signup,
@@ -23,17 +24,47 @@ async function login(req, res) {
   }
 }
 
-function signup(req, res) {
-  const user = new User(req.body)
-  user.save()
-  .then(user =>{
-    console.log(user)
-    const token = createJWT(user)
-    res.status(200).json({ token })
-  })
-  .catch(err => {
-    res.status(400).send({ err: err.errmsg })
-  })
+// function signup(req, res) {
+//   const user = new User(req.body)
+//   user.save()
+//   .then(user =>{
+//     console.log(user)
+//     const token = createJWT(user)
+//     res.status(200).json({ token })
+//   })
+//   .catch(err => {
+//     res.status(400).send({ err: err.errmsg })
+//   })
+// }
+
+
+async function signup (req, res) {
+  // extract relevant properties out of req.body object
+  const userData = {
+      email: req.body.email,
+      password: req.body.password
+  }
+
+  const profileData = {
+      displayName: req.body.displayName,
+      avatar: req.body.avatar
+  }
+  
+  try {
+      //create the User & Profile
+      const user = new User(userData)
+      const profile = new Profile(profileData) //make sure you import
+
+      //save the models
+      await user.save()
+      await profile.save()
+
+      //finish auth process
+      const token = createJWT(user)
+      res.json({ token })
+  } catch (error) {
+      res.status(400).send({ error })
+  }
 }
 
 
