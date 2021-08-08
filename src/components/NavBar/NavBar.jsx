@@ -54,8 +54,18 @@ function NavBar ({ user, handleLogout })  {
                 </Link>       
             </li>
 			<li className="nav-item">
+                <Link to="/resources" className="nav-links" >
+                   RESOURCES
+                </Link>       
+            </li>
+			<li className="nav-item">
                 <Link to="/users" className="nav-links" >
-                    SIGN UP
+                   USERS
+                </Link>       
+            </li>
+			<li className="nav-item">
+                <Link to="/login" className="nav-links" >
+                    LOGIN
                 </Link>       
             </li>
 			
