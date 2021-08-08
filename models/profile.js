@@ -7,7 +7,8 @@ const profileSchema = new Schema({
         required: true
     },
     avatar: {
-        type: String
+        type: String,
+        default: "https://i.imgur.com/jYrqtj2.jpeg"
     },
 }, {
     timestamps: true
