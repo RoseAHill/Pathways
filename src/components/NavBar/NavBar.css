@@ -40,6 +40,9 @@
      list-style: none;
      text-align: center;
      width: 70vw;
+     margin-right: 2rem;
+     justify-content: end;
+
      
  }
 
@@ -58,4 +61,20 @@
 
  .nav-links:hover{
      background-color: var(--tt-gold);
+     border-radius: 4px;
+     transition: all 0.2s ease-out;
+     color: var(--tt-black)
+
+ }
+
+ .fa-bars{
+     color: var(--tt-white)
+ }
+
+ .nav-links-mobile{
+     display: none;
+ }
+
+ .menu-icons{
+     display: none;
  }

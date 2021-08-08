@@ -44,12 +44,8 @@ function NavBar({ user, handleLogout }) {
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-			{/* HOME */}
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              Home
-            </Link>
-          </li>
+			
+          
 		  {/* PATHS */}
           <li className="nav-item">
             <Link to="/paths" className="nav-links">
