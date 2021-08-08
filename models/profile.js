@@ -10,6 +10,10 @@ const profileSchema = new Schema({
         type: String,
         default: "https://i.imgur.com/jYrqtj2.jpeg"
     },
+    userSkills: {
+        type: Schema.Types.ObjectId,
+        ref: "Skill"
+    }
 }, {
     timestamps: true
     
