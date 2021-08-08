@@ -32,3 +32,26 @@
      font-size: 2rem;
 
  }
+
+ .nav-menu{
+     display: grid;
+     grid-template-columns: repeat(5, auto);
+     grid-gap: 10px;
+     list-style: none;
+     text-align: center;
+     width: 70vw;
+     
+ }
+
+ .nav-item{
+     display: flex;
+     align-items: center;
+     height: 80px;
+ }
+
+ .nav-links{
+     color: var(--tt-white);
+     text-decoration: none;
+     padding: 0.5rem 1rem
+
+ }
