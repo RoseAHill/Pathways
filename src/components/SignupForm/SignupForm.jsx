@@ -11,6 +11,7 @@ const SignupForm = (props) => {
     email: '',
     password: '',
     passwordConf: '',
+    avatar: ''
   })
 
   const handleChange = evt => {
@@ -52,6 +53,7 @@ const SignupForm = (props) => {
           value={formData.name}
           name="name"
           onChange={handleChange}
+          placeholder="required"
         />
       </div>
       <div className={styles.inputContainer}>
@@ -63,6 +65,7 @@ const SignupForm = (props) => {
           value={formData.email}
           name="email"
           onChange={handleChange}
+          placeholder="required"
         />
       </div>
       <div className={styles.inputContainer}>
@@ -76,6 +79,7 @@ const SignupForm = (props) => {
           value={formData.password}
           name="password"
           onChange={handleChange}
+          placeholder="required"
         />
       </div>
       <div className={styles.inputContainer}>
@@ -89,6 +93,21 @@ const SignupForm = (props) => {
           value={formData.passwordConf}
           name="passwordConf"
           onChange={handleChange}
+          placeholder="required"
+        />
+      </div>
+      <div className={styles.inputContainer}>
+        <label htmlFor="avatar" className={styles.label}>
+          Avatar URL
+        </label>
+        <input
+          type="text"
+          autoComplete="off"
+          id="avatar"
+          value={formData.avatar}
+          name="avatar"
+          onChange={handleChange}
+          placeholder="optional"
         />
       </div>
       <div className={styles.inputContainer}>
