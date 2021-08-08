@@ -13,8 +13,8 @@ router.get("/:id", pathCtrl.show)
 
 router.use(decodeUserFromToken)
 
-router.post('/', pathCtrl.create)
-router.post('/:pathId/skills', pathCtrl.addSkill)
+router.post('/', checkAuth, pathCtrl.create)
+router.post('/:pathId/skills', checkAuth, pathCtrl.addSkill)
 
 
 export {

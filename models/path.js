@@ -9,7 +9,15 @@ const pathSchema = new Schema({
   skills: [{
     type: Schema.Types.ObjectId,
     ref: 'Skill'
-  }]
+  }],
+  banner: {
+    type: String,
+    default: 'https://i.imgur.com/9Gw1rrX.jpg'
+  },
+  description: {
+    type: String,
+    default: 'Follow this path to learn'
+  }
 }, {
   timestamps: true 
 })
