@@ -55,3 +55,7 @@
      padding: 0.5rem 1rem
 
  }
+
+ .nav-links:hover{
+     background-color: var(--tt-gold);
+ }
