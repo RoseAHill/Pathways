@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { NavLink, Link, BrowserRouter as Router } from 'react-router-dom'
 import './NavBar.css'
 
-const NavBar = ({ user, handleLogout }) => {
+function NavBar ({ user, handleLogout })  {
 	const [click, setClick] = useState(false)
 
 	const handleClick = () => setClick(!click)
@@ -35,7 +35,16 @@ const NavBar = ({ user, handleLogout }) => {
 		// 	</div>
 		// </nav>
 		<>
-		
+		<nav className="navbar">
+		<Link to="/" className="navbar-logo">
+			PATHWAYS
+		</Link>
+		<div className="menu-icon" onClick={handleClick}>
+             <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        </div>
+
+
+		</nav>
 		</>
 	)
 }
