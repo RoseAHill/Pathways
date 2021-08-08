@@ -53,7 +53,11 @@ function NavBar ({ user, handleLogout })  {
                    OUR PATHS
                 </Link>       
             </li>
-			
+			<li className="nav-item">
+                <Link to="/users" className="nav-links" >
+                    SIGN UP
+                </Link>       
+            </li>
 			
 		</ul>
 
