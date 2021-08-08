@@ -13,3 +13,13 @@
     --tt-turquoise: #43AA8B;
     --tt-blue: #577590;
   }
+
+ .navbar{
+     background-color: var(--tt-black);
+     height: 80px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.2rem;
+
+ }
