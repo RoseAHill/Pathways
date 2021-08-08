@@ -4,7 +4,7 @@ import { Profile } from "../models/profile.js"
 
 export {
   signup,
-  login,
+  login
 }
 
 async function login(req, res) {
@@ -41,13 +41,14 @@ async function login(req, res) {
 async function signup (req, res) {
   // extract relevant properties out of req.body object
   const userData = {
-      email: req.body.email,
-      password: req.body.password
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password
   }
 
   const profileData = {
-      displayName: req.body.displayName,
-      avatar: req.body.avatar
+    displayName: req.body.name,
+    avatar: req.body.avatar !== "" ? req.body.avatar : "https://i.imgur.com/jYrqtj2.jpeg"
   }
   
   try {
