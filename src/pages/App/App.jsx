@@ -9,7 +9,6 @@ import NavBar from '../../components/NavBar/NavBar'
 import Signup from '../Signup/Signup'
 import Login from '../Login/Login'
 import Landing from '../Landing/Landing'
-import Users from '../Users/Users'
 
 import Paths from '../PathsIndex/PathsIndex'
 
