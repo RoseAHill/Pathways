@@ -12,9 +12,9 @@ const router = Router()
 router.use(decodeUserFromToken)
 
 //comments
-router.post('/:milestoneId/comments', milestoneCtrl.createComment)
-router.delete('/:milestoneId/comments/:commentId', milestoneCtrl.deleteComment)
-router.put('/:milestoneId/comments/:commentId', milestoneCtrl.updateCommentLink)
+router.post('/:milestoneId/comments', checkAuth, milestoneCtrl.createComment)
+router.delete('/:milestoneId/comments/:commentId', checkAuth, milestoneCtrl.deleteComment)
+router.put('/:milestoneId/comments/:commentId', checkAuth, milestoneCtrl.updateCommentLink)
 
 export {
     router

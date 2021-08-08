@@ -12,7 +12,7 @@ router.get('/:id', skillCtrl.show)
 
 router.use(decodeUserFromToken)
 
-router.post('/:skillId/milestones', skillCtrl.addMilestone)
+router.post('/:skillId/milestones', checkAuth, skillCtrl.addMilestone)
 
 
 export {
