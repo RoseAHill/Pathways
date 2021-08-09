@@ -1,0 +1,26 @@
+:root {
+    font-size: 62.5%;
+    /* vars */
+    --tt-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --tt-white: #D8E2DC;
+    --tt-black: #220C10;
+    --tt-red: #F94144;
+    --tt-orange: #F3722C;
+    --tt-gold: #F8961E;
+    --tt-yellow: #F9C74F;
+    --tt-green: #90BE6D;
+    --tt-turquoise: #43AA8B;
+    --tt-blue: #577590;
+  }
+
+  .btn{
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--tt-white);
+      background-color: var(--tt-gold);
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      padding: 8px 20px;
+  }
