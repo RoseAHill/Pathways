@@ -42,7 +42,6 @@ const create = async (req, res) => {
 const index = async (req, res) => {
   try {
     const paths = await Path.find({})
-      .populate('skills')
     return res.status(200).json(paths)
   } catch (error) {
     return res.status(500).send(error.message, 'Could not load paths')
