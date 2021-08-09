@@ -1,6 +1,6 @@
 import React from 'react'
 
-//TODO: import Comment Component
+import Comment from '../Comment/Comment'
 
 const Milestone = ({ title, description, comments }) => {
   const commentList = comments.map((comment, index) => {
