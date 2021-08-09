@@ -11,8 +11,8 @@ const Path = (props) => {
   // methods
 
   return (
-    <>
-    </>
+    <main className="paths">
+    </main>
   )
 }
 
