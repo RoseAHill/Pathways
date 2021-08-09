@@ -7,6 +7,8 @@ function NavBar({ user, handleLogout }) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
+  const exitMobile = () => setClick(false)
   return (
     // <nav>
     // 	<div>
@@ -44,9 +46,7 @@ function NavBar({ user, handleLogout }) {
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-			
-          
+        <ul className={click ? "nav-menu active" : "nav-menu"}>   
 		  {/* PATHS */}
           <li className="nav-item">
             <Link to="/paths" className="nav-links">
