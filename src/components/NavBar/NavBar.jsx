@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link, BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
+import logo from "./logo.png"
 
 function NavBar({ user, handleLogout }) {
   const [click, setClick] = useState(false);
@@ -38,7 +39,7 @@ function NavBar({ user, handleLogout }) {
 	{/* LOGO */}
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          PATHWAYS
+         <img className = "logo" src={logo} alt="" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
