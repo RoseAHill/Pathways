@@ -1,18 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Services
+import { getSkillById } from '../../services/skillService'
 
 // Components
 
+import { Skill as SkillDisplay } from '../../components/Skill/Skill'
 
 const Skill = (props) => {
+  const { id } = props.match.params
   // useStates
+  const [skillData, setSkillData] = useState()
+  const [milestonesArray, setMilestonesArray] = useState()
 
   // methods
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        const skill = await getSkillById(id)
+        setTimeout(() => {
+          setSkillData(skill)
+          setMilestonesArray(skill.milestones)
+        }, 1000)
+      } catch (error) {
+        throw error
+      }
+    }
+    fetchPost()
+    return () => { setSkillData(null)}
+  }, [id])
 
   return (
-    <>
-    </>
+    <div className="skill">
+      {skillData ?
+        <>
+        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} />
+        </>
+        :
+        <div className="loading-container">
+          <img src="../../assets/logo-extract" alt="Pathways logo" />
+        </div>
+      }
+    </div>
   )
 }
 
