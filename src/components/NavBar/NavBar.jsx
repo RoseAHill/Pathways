@@ -49,7 +49,7 @@ function NavBar({ user, handleLogout }) {
         <ul className={click ? "nav-menu active" : "nav-menu"}>   
 		  {/* PATHS */}
           <li className="nav-item">
-            <Link to="/paths" className="nav-links">
+            <Link to="/paths" className="nav-links" onClick={exitMobile}>
               OUR PATHS
             </Link>
           </li>
