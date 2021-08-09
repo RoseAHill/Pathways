@@ -56,10 +56,6 @@ const App = () => {
 
 				{/* ProtectedRoute to /profile */}
 
-				{/* ProtectedRoute to /profile */}
-
-				{/* ProtectedRoute to /profile */}
-				{/* ProtectedRoute to /profile */}
 
 				{/* <Route exact path='/users'>
 					{user ? <Users /> : <Redirect to='/login' />}

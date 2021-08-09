@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link, BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
 import logo from "./logo.png"
-import {Button}  from "./Button"
+import {Button}  from "../Misc/Button/Button"
 
 function NavBar({ user, handleLogout }) {
   const [click, setClick] = useState(false);
@@ -68,12 +68,12 @@ function NavBar({ user, handleLogout }) {
           </li>
 		  {/* LOGIN */}
           <li>
-            <Link to="/login" className="nav-links-movile">
+            <Link to="/login" className="nav-links-mobile">
               LOGIN
             </Link>
           </li>
         </ul>
-        <Button/>
+        <Button linkTo="/login" title="LOGIN" />
       </nav>
     </>
   );
