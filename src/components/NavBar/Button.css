@@ -24,3 +24,14 @@
       border-radius: 4px;
       padding: 8px 20px;
   }
+
+  .btn:hover{
+      color: var(--tt-white);
+      border: 2px solid var(--tt-gold);
+      border-radius: 4px;
+      background-color: transparent;
+      padding: 6px 18px;
+      transition: all 0.3s ease-out;
+
+
+  }

@@ -74,7 +74,7 @@
  }
 
  .fa-bars{
-     color: var(--tt-white)
+     color: var(--tt-gold)
  }
 
  .nav-links-mobile{
@@ -115,6 +115,44 @@
          padding: 2rem;
          width: 100%;
          display: table;
+     }
+     .nav-links:hover{
+         background-color: var(--tt-gold);
+     }
+     .navbar-logo{
+         position: absolute;
+         top: 0;
+         left: 0;
+         transform: translate(25%, 50%)    
+
+     }
+
+     .menu-icon{
+         /* position: absolute; */
+         display: block;
+         font-size: 1.8rem;
+         cursor: pointer;
+         /* top: 0;
+         right: 0; */
+         transform: translate(-100%, 60%);
+
+     }
+     .fa-times{
+         color: var(--tt-gold);
+         font-size: 2rem;
+     }
+     .nav-links-mobile{
+         display: block;
+         text-align: center;
+         margin: 2 rem auto;
+         font-size: 1.5rem;
+         padding: 1.5rem;
+         border-radius: 4px;
+         width: 80%;
+         text-decoration: none;
+         color: var(--tt-white);
+         background-color: var(--tt-gold);
+
      }
 
  }

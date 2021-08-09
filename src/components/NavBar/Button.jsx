@@ -2,7 +2,7 @@ import React from "react"
 import "./Button.css"
 import { Link } from "react-router-dom"
 
-const Button = () => {
+export function Button() {
 
     return (
 <Link to="/login">
@@ -11,4 +11,3 @@ const Button = () => {
     )
 }
 
-export default Button

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link, BrowserRouter as Router } from "react-router-dom";
 import "./NavBar.css";
 import logo from "./logo.png"
+import {Button}  from "./Button"
 
 function NavBar({ user, handleLogout }) {
   const [click, setClick] = useState(false);
@@ -72,6 +73,7 @@ function NavBar({ user, handleLogout }) {
             </Link>
           </li>
         </ul>
+        <Button/>
       </nav>
     </>
   );
