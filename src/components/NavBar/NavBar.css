@@ -37,6 +37,7 @@
  .logo{
      width: 18%;
      margin-top: 10px;
+     margin-left: 20px;
  }
 
  .nav-menu{
@@ -69,19 +70,18 @@
      background-color: var(--tt-gold);
      border-radius: 4px;
      transition: all 0.2s ease-out;
-     color: var(--tt-black)
 
  }
 
  .fa-bars{
-     color: var(--tt-gold)
+     color: var(--tt-gold);
  }
 
  .nav-links-mobile{
      display: none;
  }
 
- .menu-icons{
+ .menu-icon {
      display: none;
  }
 
@@ -118,8 +118,9 @@
      }
      .nav-links:hover{
          background-color: var(--tt-gold);
+         border-radius: 0;
      }
-     .navbar-logo{
+     .navbar-logo, .logo{
          position: absolute;
          top: 0;
          left: 0;
@@ -128,12 +129,12 @@
      }
 
      .menu-icon{
-         /* position: absolute; */
+         position: absolute;
          display: block;
          font-size: 1.8rem;
          cursor: pointer;
-         /* top: 0;
-         right: 0; */
+         top: 0;
+         right: 0;
          transform: translate(-100%, 60%);
 
      }
@@ -153,6 +154,15 @@
          color: var(--tt-white);
          background-color: var(--tt-gold);
 
+     }
+     .nav-links-mobile:hover{
+         background: var(--tt-white);
+         color: var(--tt-gold);
+         transition: 250ms;
+     }
+
+     button{
+         display: none;
      }
 
  }

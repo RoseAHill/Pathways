@@ -56,7 +56,7 @@ function NavBar({ user, handleLogout }) {
           </li>
 		  {/* RESOURCES */}
           <li className="nav-item">
-            <Link to="/resources" className="nav-links">
+            <Link to="/resources" className="nav-links" >
               RESOURCES
             </Link>
           </li>
@@ -67,8 +67,8 @@ function NavBar({ user, handleLogout }) {
             </Link>
           </li>
 		  {/* LOGIN */}
-          <li className="nav-item">
-            <Link to="/login" className="nav-links">
+          <li>
+            <Link to="/login" className="nav-links-movile">
               LOGIN
             </Link>
           </li>
