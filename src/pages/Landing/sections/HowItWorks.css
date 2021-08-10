@@ -1,0 +1,75 @@
+:root {
+    font-size: 62.5%;
+    /* vars */
+    --tt-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --tt-white: #D8E2DC;
+    --tt-black: #220C10;
+    --tt-red: #F94144;
+    --tt-orange: #F3722C;
+    --tt-gold: #F8961E;
+    --tt-yellow: #F9C74F;
+    --tt-green: #90BE6D;
+    --tt-turquoise: #43AA8B;
+    --tt-blue: #577590;
+    --tt-dark: #0f0406;
+    --tt-darker: #180000;
+    --tt-white-shadow: rgba(255, 255, 255, 0.8);
+  --tt-dark-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  --tt-slight: #3f282c;
+  --tt-slight2:rgb(53, 32, 35)c;
+  --tt-slight-dark : #251518;
+  --tt-slight-shadow: 0 0 15px rgba(78, 43, 43, 0.2);
+
+  }
+  .instruction-section {
+    background-color: var(--tt-slight);
+    padding-bottom: 50px;
+    background-color: #012336;
+  }
+
+  .instruction-item {
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px 30px;
+    padding: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--tt-slight-shadow)
+  }
+
+  .instruction-item::before,
+.instruction-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tt-dark);
+  background-color: #001a29;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.instruction-item .icon {
+    font-size: 30px;
+    color: var(--tt-white);
+    margin: 0 0 10px;
+    transition: all 0.5s ease;
+  }
+
+  .instruction-item  h3 {
+    color: var(--tt-white-shadow);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--tt-white);
+  }
+  

@@ -1,13 +1,17 @@
-import styles from './Landing.module.css'
+import "./Landing.css"
 import PathCard from '../../components/PathCard/PathCard'
+import Section1 from "./sections/Section1"
+import HowItWorks from "./sections/HowItWorks"
 
 const Landing = ({user}) => {
   return (
-    <main className={styles.container}>
-      <h1>
+    <main >
+      {/* <h1>
         hello, {user ? user.name : "friend"}
       </h1>
-      <PathCard/>
+      <PathCard/> */}
+      <Section1/>
+      <HowItWorks/>
     </main>
   )
 }

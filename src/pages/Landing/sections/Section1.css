@@ -1,0 +1,139 @@
+:root {
+    font-size: 62.5%;
+    /* vars */
+    --tt-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --tt-white: #D8E2DC;
+    --tt-black: #220C10;
+    --tt-red: #F94144;
+    --tt-orange: #F3722C;
+    --tt-gold: #F8961E;
+    --tt-yellow: #F9C74F;
+    --tt-green: #90BE6D;
+    --tt-turquoise: #43AA8B;
+    --tt-blue: #577590;
+    --tt-slight: #3d272b;
+    --tt-slight-dark : #251518;
+
+  }
+
+  .landing-container{
+      max-width: 1170px;
+      margin: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home-section {
+      background-color: var(--tt-slight-dark);
+      background-color: #001a29;
+
+      overflow: hidden;
+  }
+
+  .home-section .h-100{
+      padding: 120px 0;
+  }
+
+  .home-text,
+  .home-img{
+      width: 50%;
+      padding: 0 15px;
+  }
+
+  .home-text h1 {
+    font-size: 50px;
+    color: var(--tt-turquoise);
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .home-text h1 span {
+    color: var(--tt-white);
+    position: relative;
+    z-index: 1;
+  }
+  .home-text h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--tt-white);
+    margin: 15px 0 40px;
+  }
+
+  .home-img-inner {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+  }
+  .home-img-inner img {
+    width: 100%;
+    animation: zoomOutIn01 7s linear infinite;
+  }
+
+  .home-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: spin01 30s linear infinite;
+  }
+
+  .home-objects{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--tt-white);
+  }
+
+  .home-objects:nth-child(1) {
+    left: -40px;
+    top: calc(50% - 40px);
+    
+  }
+
+  .home-objects:nth-child(2) {
+    right: -40px;
+    top: calc(50% - 40px);
+    
+  }
+
+  .home-objects:nth-child(3) {
+    top: -40px;
+    left: calc(50% - 40px);
+   
+  }
+
+  .home-objects:nth-child(4) {
+    bottom: -40px;
+    left: calc(50% - 40px);
+    
+  }
+
+  @keyframes spin01 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes zoomOutIn01 {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
