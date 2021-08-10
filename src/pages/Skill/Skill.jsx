@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { getSkillById } from '../../services/skillService'
 
 // Components
-import { Skill as SkillDisplay } from '../../components/Skill/Skill'
+import SkillDisplay from '../../components/Skill/SkillDisplay'
 
 const Skill = (props) => {
   const { id } = props.match.params
