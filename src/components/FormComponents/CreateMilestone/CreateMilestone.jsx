@@ -25,8 +25,8 @@ const CreateMilestone = (props) => {
                    autoComplete="off"
                    placeholder="Milestone Description"
                    name="description"
-                   value={props.description}
-                   onChange={e => props.setDescription(e.target.value)}
+                   value={props.milestoneDescription}
+                   onChange={e => props.setMilestoneDescription(e.target.value)}
                    id="milestone-description"
                    />
 
