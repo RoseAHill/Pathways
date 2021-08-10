@@ -22,8 +22,8 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                    <a href="https://github.com/RoseAHill"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/rosieahill/"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/rosieahill/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/RoseAHill" target = "_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -40,8 +40,11 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                    <a href="https://github.com/Jadessu"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/junioradessu/"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/junioradessu/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Jadessu" target = "_blank"><i class="fab fa-github" 
+                    
+                    
+                    aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -58,8 +61,12 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                <a href="https://github.com/sarahgaled"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/sjgal-ed/"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href= "https://www.linkedin.com/in/sjgal-ed/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/sarahgaled" target = "_blank"><i class="fab fa-github" 
+                    
+                   
+                    
+                    aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
