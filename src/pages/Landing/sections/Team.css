@@ -26,3 +26,12 @@
    background-color: #001a29;
 
 }
+
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #001a29;
+    color: var(--tt-white)
+
+  }
