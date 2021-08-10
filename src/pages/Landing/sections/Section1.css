@@ -40,3 +40,25 @@
     text-transform: uppercase;
     line-height: 1.2;
   }
+
+  .home-text h1 span {
+    color: var(--tt-white);
+    position: relative;
+    z-index: 1;
+  }
+  .home-text h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--tt-white);
+    margin: 15px 0 40px;
+  }
+
+  .home-img-inner {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+  }
+  .home-img-inner img {
+    width: 100%;
+    animation: zoomOutIn01 7s linear infinite;
+  }
