@@ -13,13 +13,19 @@
     --tt-turquoise: #43AA8B;
     --tt-blue: #577590;
     --tt-dark: #0f0406;
-    --tt-darker: #140101;
+    --tt-darker: #180000;
     --tt-white-shadow: rgba(255, 255, 255, 0.8);
   --tt-dark-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  --tt-slight: #3f282c;
+  --tt-slight2:rgb(53, 32, 35)c;
+  --tt-slight-dark : #251518;
+  --tt-slight-shadow: 0 0 15px rgba(78, 43, 43, 0.2);
+
   }
   .instruction-section {
-    background-color: var(--tt-darker);
+    background-color: var(--tt-slight);
     padding-bottom: 50px;
+    background-color: #012336;
   }
 
   .instruction-item {
@@ -30,7 +36,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    box-shadow: var(--tt-dark-shadow)
+    box-shadow: var(--tt-slight-shadow)
   }
 
   .instruction-item::before,
@@ -41,7 +47,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--dark-700);
+  background-color: var(--tt-dark);
+  background-color: #001a29;
   z-index: -1;
   transition: all 0.5s ease;
 }

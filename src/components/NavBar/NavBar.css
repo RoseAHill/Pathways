@@ -17,6 +17,7 @@
 
  .navbar{
      background-color: var(--tt-dark);
+     background-color: #060e13;
      height: 80px;
      display: flex;
      justify-content: center;

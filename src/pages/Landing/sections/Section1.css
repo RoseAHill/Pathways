@@ -12,6 +12,9 @@
     --tt-green: #90BE6D;
     --tt-turquoise: #43AA8B;
     --tt-blue: #577590;
+    --tt-slight: #3d272b;
+    --tt-slight-dark : #251518;
+
   }
 
   .landing-container{
@@ -24,7 +27,9 @@
     flex-wrap: wrap;
   }
   .home-section {
-      background-color: var(--tt-black);
+      background-color: var(--tt-slight-dark);
+      background-color: #001a29;
+
       overflow: hidden;
   }
 
@@ -114,4 +119,21 @@
     
   }
 
+  @keyframes spin01 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes zoomOutIn01 {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
   
