@@ -12,7 +12,11 @@
   --tt-green: #90BE6D;
   --tt-turquoise: #43AA8B;
   --tt-blue: #577590;
-  scroll-behavior: smooth;
+  --tt-dark: #0f0406;
+  --tt-darker: #140101;
+  --tt-white-shadow: rgba(255, 255, 255, 0.8);
+--tt-dark-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +46,21 @@ body {
   margin: auto;
 }
 
+.section-title {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  color: var(--tt-white-shadow);
+  font-weight: 600;
+}
+.section-title h2 span {
+  position: relative;
+}
 
 
 .row {
