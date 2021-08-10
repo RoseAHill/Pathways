@@ -1,3 +1,6 @@
+import React from "react"
+import "./HowItWorks.css"
+
 const HowItWorks = () => {
     return ( 
         <section className="instruction-section sec-padding" id="instruction">
