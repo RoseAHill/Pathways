@@ -3,7 +3,9 @@ import CreateMilestone from '../FormComponents/CreateMilestone/CreateMilestone'
 
 import Milestone from '../Milestone/Milestone'
 
+
 const Skill = (props) => {
+  console.log(props.currentUser._id);
   const milestoneList = props.milestoneArray.map((milestone, index) => {
     return (<Milestone
       key={index}
@@ -18,7 +20,7 @@ const Skill = (props) => {
 
 
   // methods
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const formData = {
       milestoneName: milestoneTitle, 
@@ -26,7 +28,8 @@ const Skill = (props) => {
       addedBy: props.currentUser._id,
       parentSkill: props.skillId
     }
-    props.handleCreateMilestone(formData)
+    const res = await props.handleCreateMilestone(formData)
+    props.setMilestoneArray([...milestoneList, res])
   }
 
   return (
