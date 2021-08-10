@@ -93,5 +93,11 @@
   .home-objects:nth-child(1) {
     left: -40px;
     top: calc(50% - 40px);
-    /* background-color: var(--color-1); */
+    
+  }
+
+  .home-objects:nth-child(2) {
+    right: -40px;
+    top: calc(50% - 40px);
+    
   }
