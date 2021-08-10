@@ -45,7 +45,7 @@ const Skill = (props) => {
     <div className="skill">
       {skillData ?
         <>
-        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} />
+        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} skillId={id}/>
         </>
         :
         <div className="loading-container">
