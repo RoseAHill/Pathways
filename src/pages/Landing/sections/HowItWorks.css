@@ -14,8 +14,21 @@
     --tt-blue: #577590;
     --tt-dark: #0f0406;
     --tt-darker: #140101;
+    --tt-white-shadow: rgba(255, 255, 255, 0.8);
+  --tt-dark-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
   .instruction-section {
     background-color: var(--tt-darker);
     padding-bottom: 50px;
+  }
+
+  .instruction-item {
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px 30px;
+    padding: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--tt-dark-shadow)
   }
