@@ -46,3 +46,11 @@
    box-shadow: 0.6em 0.6em 0.5em #020d1b;
    border-radius: 20px;
 }
+
+ .card .content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
