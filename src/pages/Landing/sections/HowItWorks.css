@@ -55,7 +55,7 @@
 
 .instruction-item .icon {
     font-size: 30px;
-    color: var(--tt-white);
+    color: #d5ec03;
     margin: 0 0 10px;
     transition: all 0.5s ease;
   }
