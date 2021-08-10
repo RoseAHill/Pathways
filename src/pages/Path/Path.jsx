@@ -1,8 +1,12 @@
 import React from 'react'
 
 // Services
+import {
+  getPathById,
+} from '../../services/pathService'
 
 // Components
+import SkillCard from '../../components/SkillCard/SkillCard'
 
 
 const Path = (props) => {
@@ -11,9 +15,9 @@ const Path = (props) => {
   // methods
 
   return (
-    <main className="paths">
-      <h1> Details </h1>
-    </main>
+    <div className="skill-card">
+      <SkillCard />
+    </div>
   )
 }
 
