@@ -1,5 +1,19 @@
+:root {
+  --main-color: #24caac;
+  --color-1: #eaa023;
+  --color-2: #e91e63;
+  --dark-800: #24292d;
+  --dark-700: #2f363e;
+  --white-900: #ffffff;
+  --white-800: rgba(255, 255, 255, 0.8);
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+
+
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
