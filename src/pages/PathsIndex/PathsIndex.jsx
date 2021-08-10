@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+import {Link} from 'react-router-dom'
 // Services
 import * as pathService from '../../services/pathService' 
 
@@ -17,7 +17,7 @@ const PathsIndex = (props) => {
     const fetchPaths = async () => {
       try{
         const pathsData = await pathService.getAllPaths()
-        console.log(pathsData)
+        setPaths(pathsData)
       } catch (error){
         throw error
       }
@@ -25,9 +25,17 @@ const PathsIndex = (props) => {
     fetchPaths()
   }, []);
 
+  console.log(paths)
+
   return (
-    <>
-    </>
+    <div className="path-index">
+      {paths.map((path, idx) => (
+      <div key={idx}>
+       <Link to={`/details/${path._id}`}> <h1>{path.title}</h1> </Link> 
+        
+      </div>
+      ))}
+    </div>
   )
 }
 
