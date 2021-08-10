@@ -1,6 +1,6 @@
 import "./Landing.css"
 import PathCard from '../../components/PathCard/PathCard'
-import Section1 from "./sections/Section1"
+import Section1 from "./sections/section1"
 import HowItWorks from "./sections/HowItWorks"
 
 const Landing = ({user}) => {
