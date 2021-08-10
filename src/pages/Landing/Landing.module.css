@@ -40,12 +40,32 @@ body {
   margin: auto;
 }
 
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 .home-section .h-100 {
   padding: 120px 0;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-content-center {
+  align-content: center;
+}
+
+.h-100 {
+  min-height: 100vh;
 }
 
 

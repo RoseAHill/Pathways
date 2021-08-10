@@ -1,5 +1,7 @@
 import React from "react"
 import "./Section1.css"
+import {Button} from "../../../components/Misc/Button/Button"
+
 const Section1 = () => {
 
 
@@ -12,9 +14,7 @@ const Section1 = () => {
               Welcome to <span>Pathways</span>
             </h1>
             <h2>Our mission is to help you discover fun ways to learn new skills.</h2>
-            {/* <a href="#" className="btn btn-1">
-              get started
-            </a> */}
+            <Button linkTo="/signup" title="GET STARTED" />
           </div>
           <div className="home-img">
             <div className="home-img-inner">
