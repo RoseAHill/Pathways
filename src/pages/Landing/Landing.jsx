@@ -1,10 +1,10 @@
-import styles from './Landing.module.css'
+import "./Landing.css"
 import PathCard from '../../components/PathCard/PathCard'
 import Section1 from "./sections/Section1"
 
 const Landing = ({user}) => {
   return (
-    <main className={styles.container}>
+    <main >
       {/* <h1>
         hello, {user ? user.name : "friend"}
       </h1>
