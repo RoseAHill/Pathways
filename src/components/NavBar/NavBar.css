@@ -12,10 +12,11 @@
     --tt-green: #90BE6D;
     --tt-turquoise: #43AA8B;
     --tt-blue: #577590;
+    --tt-dark: #0f0406;
   }
 
  .navbar{
-     background-color: var(--tt-black);
+     background-color: var(--tt-dark);
      height: 80px;
      display: flex;
      justify-content: center;
