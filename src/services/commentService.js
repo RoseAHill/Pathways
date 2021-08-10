@@ -31,16 +31,17 @@ export const deleteComment = async (milestoneId, commentId) => {
     }
 }
 
-export const updateCommentLink = async (commentId, milestoneId) => {
+export const updateCommentLink = async (refLink, commentId, milestoneId) => {
     try {
         const res = await fetch(
-            `${BASE_URL}${milestoneId}/comments/${commentId}/mark-as-solution`,
+            `${BASE_URL}${milestoneId}/comments/${commentId}`,
             {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json',
                     'Authorization': 'Bearer ' + tokenService.getToken()
                 },
+                body: JSON.stringify(refLink)
             }, { mode: 'cors' }
         )
         const data = await res.json()
