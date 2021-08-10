@@ -5,6 +5,7 @@ import { getSkillById } from '../../services/skillService'
 
 // Components
 import SkillDisplay from '../../components/Skill/SkillDisplay'
+import { withRouter } from 'react-router-dom'
 
 const Skill = (props) => {
   const { id } = props.match.params
@@ -29,10 +30,8 @@ const Skill = (props) => {
     const fetchPost = async () => {
       try {
         const skill = await getSkillById(id)
-        setTimeout(() => {
-          setSkillData(skill)
-          setMilestonesArray(skill.milestones)
-        }, 1000)
+        setSkillData(skill)
+        setMilestonesArray(skill.milestones)
       } catch (error) {
         throw error
       }
@@ -43,7 +42,7 @@ const Skill = (props) => {
 
   return (
     <div className="skill">
-      {skillData ?
+      {skillData && milestonesArray ?
         <>
         <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} skillId={id}/>
         </>
@@ -56,4 +55,4 @@ const Skill = (props) => {
   )
 }
 
-export default Skill
+export default withRouter(Skill)
