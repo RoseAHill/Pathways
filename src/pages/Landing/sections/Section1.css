@@ -107,3 +107,9 @@
     left: calc(50% - 40px);
    
   }
+
+  .home-objects:nth-child(4) {
+    bottom: -40px;
+    left: calc(50% - 40px);
+    
+  }
