@@ -8,7 +8,7 @@ const Milestone = ({ title, description, comments }) => {
       key={index}
       content={comment.content}
       refLink={comment.refLink}
-      author="Joe Schmoe" //TODO: find author on backend
+      author="Someone" //TODO: find author on backend
     />)
   })
   

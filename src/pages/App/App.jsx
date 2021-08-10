@@ -11,7 +11,8 @@ import Login from '../Login/Login'
 import Landing from '../Landing/Landing'
 import Path from '../Path/Path'
 
-import Paths from '../PathsIndex/PathsIndex'
+import PathsIndex from '../PathsIndex/PathsIndex'
+import Skill from '../Skill/Skill'
 
 const App = () => {
 	const history = useHistory()
@@ -52,11 +53,18 @@ const App = () => {
 				</Route>
 
 				<Route exact path='/paths'>
-					<Paths />
+					<PathsIndex />
 				</Route>
 
-				<Route exact path='/details/:id'>
+				<Route path='/path/:id'>
 					<Path />
+				</Route>
+
+				<Route path='/skill/:id'>
+					{user ? 
+						<Skill currentUser={user} /> : 
+						<Signup handleSignupOrLogin={handleSignupOrLogin}/>
+					}
 				</Route>
 
 				{/* ProtectedRoute to /profile */}

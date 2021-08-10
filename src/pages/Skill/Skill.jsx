@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import { getSkillById } from '../../services/skillService'
 
 // Components
-
 import { Skill as SkillDisplay } from '../../components/Skill/Skill'
 
 const Skill = (props) => {
@@ -13,7 +12,19 @@ const Skill = (props) => {
   const [skillData, setSkillData] = useState()
   const [milestonesArray, setMilestonesArray] = useState()
 
+
   // methods
+
+  // const handleCreateMilestone = async (formData) => {
+  //   try {
+  //     const newMilestone = await 
+  //   } catch (error) {
+  //     throw error
+  //   }
+  // }
+  
+
+
   useEffect(() => {
     const fetchPost = async () => {
       try {
@@ -34,7 +45,7 @@ const Skill = (props) => {
     <div className="skill">
       {skillData ?
         <>
-        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} />
+        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} skillId={id}/>
         </>
         :
         <div className="loading-container">
