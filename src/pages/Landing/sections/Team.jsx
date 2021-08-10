@@ -11,7 +11,7 @@ const Team = () => {
   
         <div className="card">
             <div className="content">
-                <div className="imgBx">
+                <div className="image">
                 <img
                 src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=6&m=1168369629&s=612x612&w=0&h=TdA36g-cvBexDNmOIN0oQwZ58x6GPAaXTI_exJQGzqY="
                 alt="home-img"
@@ -29,7 +29,7 @@ const Team = () => {
         </div>
         <div className="card">
             <div className="content">
-                <div className="imgBx">
+                <div className="image">
                 <img
                 src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=6&m=1168369629&s=612x612&w=0&h=TdA36g-cvBexDNmOIN0oQwZ58x6GPAaXTI_exJQGzqY="
                 alt="home-img"
@@ -47,7 +47,7 @@ const Team = () => {
         </div>
         <div className="card">
             <div className="content">
-                <div className="imgBx">
+                <div className="image">
                 <img
                 src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=6&m=1168369629&s=612x612&w=0&h=TdA36g-cvBexDNmOIN0oQwZ58x6GPAaXTI_exJQGzqY="
                 alt="home-img"

@@ -54,3 +54,12 @@
    align-items: center;
    flex-direction: column;
 }
+ .content .image
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
