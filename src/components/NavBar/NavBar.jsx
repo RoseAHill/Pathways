@@ -40,6 +40,7 @@ function NavBar({ user, handleLogout }) {
     // </nav>
     <>
 	{/* LOGO */}
+  {/* Hi this is useless */}
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
          <img className = "logo" src={logo} alt="" />
