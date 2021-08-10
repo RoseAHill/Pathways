@@ -1,5 +1,5 @@
 import * as tokenService from './tokenService'
-const BASE_URL = '/api/posts/'
+const BASE_URL = '/api/milestones/'
 
 export const createComment = async (milestoneId, comment) => {
     try {

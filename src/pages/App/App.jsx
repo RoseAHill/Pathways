@@ -9,6 +9,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import Signup from '../Signup/Signup'
 import Login from '../Login/Login'
 import Landing from '../Landing/Landing'
+import Path from '../Path/Path'
 
 import Paths from '../PathsIndex/PathsIndex'
 
@@ -52,6 +53,10 @@ const App = () => {
 
 				<Route exact path='/paths'>
 					<Paths />
+				</Route>
+
+				<Route exact path='/details/:id'>
+					<Path />
 				</Route>
 
 				{/* ProtectedRoute to /profile */}

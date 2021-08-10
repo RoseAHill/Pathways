@@ -12,6 +12,7 @@ const Path = (props) => {
 
   return (
     <main className="paths">
+      <h1> Details </h1>
     </main>
   )
 }
