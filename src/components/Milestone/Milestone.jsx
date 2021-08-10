@@ -14,7 +14,13 @@ const Milestone = ({ title, description, comments }) => {
   
   return (
     <div className="milestone">
-      {commentList}
+      <div className="milestone-info">
+        <h3 className="milestone-title">{title}</h3>
+        <p className="milestone-description">{description}</p>
+      </div>
+      <div className="comments-list">
+        {commentList}
+      </div>
     </div>
   )
 }
