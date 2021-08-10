@@ -2,15 +2,13 @@ import { Skill } from "../models/skill.js"
 import { Milestone } from "../models/milestone.js"
 
 const addMilestone = async (req, res) => {
+  console.log(req.body)
+  
   try {
-    if(!Skill.exists({ _id: req.params.skillId })) {
-      return res.status(500).json({ err: `No such skill exists with the id of ${req.params.skillId}` })
-    }
-    req.body.parentSkill = req.params.skillId
     const milestone = await new Milestone(req.body)
     await milestone.save()
     await Skill.updateOne(
-      { _id: req.params.skillId },
+      { _id: req.body.parentSkill },
       { $push: { milestones: milestone } }
     )
     return res.status(201).json(milestone)
