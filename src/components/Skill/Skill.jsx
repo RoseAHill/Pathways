@@ -5,11 +5,11 @@ import Milestone from '../Milestone/Milestone'
 
 const Skill = (props) => {
   const milestoneList = props.milestoneArray.map((milestone, index) => {
-    <Milestone
+    return (<Milestone
       key={index}
       title={milestone.milestoneName}
       description={milestone.description}
-      comments={milestone.comments} />
+      comments={milestone.comments} />)
   })
 
   // useStates
@@ -23,7 +23,8 @@ const Skill = (props) => {
     const formData = {
       milestoneName: milestoneTitle, 
       description: milestoneDescription,
-      addedBy: props.currentUser._id
+      addedBy: props.currentUser._id,
+      parentSkill: props.skillId
     }
     props.handleCreateMilestone(formData)
   }
