@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Switch, Route, Redirect, useHistory } from 'react-router-dom'
+import { Switch, Route, Redirect, useHistory} from 'react-router-dom'
 
 // Services
 import * as authService from '../../services/authService'
@@ -61,10 +61,7 @@ const App = () => {
 				</Route>
 
 				<Route path='/skill/:id'>
-					{user ? 
-						<Skill currentUser={user} /> : 
-						<Signup handleSignupOrLogin={handleSignupOrLogin}/>
-					}
+					<Skill currentUser={user} /> 
 				</Route>
 
 				{/* ProtectedRoute to /profile */}
