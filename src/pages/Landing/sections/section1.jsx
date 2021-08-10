@@ -5,13 +5,13 @@ const Section1 = () => {
 
     return (
         <section className="home-section" id="home">
-      <div className="container">
+      <div className="landing-container">
         <div className="row h-100 align-items-center align-content-center">
           <div className="home-text">
             <h1>
-              Fall in love with <span>coding</span>
+              Welcome to <span>Pathways</span>
             </h1>
-            <h2>Explore the world of Competitive Programming.</h2>
+            <h2>Our mission is to help you discover fun ways to learn new skills.</h2>
             {/* <a href="#" className="btn btn-1">
               get started
             </a> */}
