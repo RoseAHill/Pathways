@@ -17,7 +17,7 @@ const Team = () => {
                 alt="home-img"
               />
                 </div>
-                <div className="contentBx">
+                <div className="info">
                     <h4>Rosie Aranaga-Hill</h4>
                     <h5>Software Engineer</h5>
                 </div>
@@ -35,7 +35,7 @@ const Team = () => {
                 alt="home-img"
               />
                 </div>
-                <div className="contentBx">
+                <div className="info">
                     <h4>Junior Adessu</h4>
                     <h5>Software Engineer</h5>
                 </div>
@@ -53,7 +53,7 @@ const Team = () => {
                 alt="home-img"
               />
                 </div>
-                <div className="contentBx">
+                <div className="info">
                     <h4>SJ Gal-Ed</h4>
                     <h5>Software Engineer</h5>
                 </div>
