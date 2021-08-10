@@ -20,7 +20,7 @@ const CreateMilestone = (props) => {
                    /> 
 
                 <label htmlFor="milestone-description"> Milestone Description </label>
-                   <input
+                   <textarea
                    required
                    autoComplete="off"
                    placeholder="Milestone Description"
