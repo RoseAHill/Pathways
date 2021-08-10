@@ -89,3 +89,22 @@
    font-weight: bold;
    text-align: center;
 }
+
+.socials
+{
+   margin-top: 20px;
+}
+
+.socials a
+{
+   text-decoration: none;
+   color: #d5ec03;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+
+.socials a:hover
+{
+   color: #ffffff;
+}
