@@ -1,6 +1,7 @@
 import React from "react"
 import "./Section1.css"
 import {Button} from "../../../components/Misc/Button/Button"
+import HomeImage from "../images/homeImage.png"
 
 const Section1 = () => {
 
@@ -32,7 +33,7 @@ const Section1 = () => {
                 {/* <img src={} alt="idea light bulb" /> */}
                 </div>
               </div>
-              {/* <img src={cliff3} alt="home-img" /> */}
+              <img src={HomeImage} alt="home-img" />
             </div>
           </div>
         </div>
