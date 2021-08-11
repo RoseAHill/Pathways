@@ -18,11 +18,29 @@ const handleSubmit = (e) => {
     }
 
     return(
-        <div>
+        <form>
+            <div className="comment">
+                <label>Enter your Comment</label>
+            </div>
 
-        </div>
+            <input
+            required
+            autoComplete='off'
+            placeholder="Comment"
+            name="comment_text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            ></input>
+
+            <button type="submit">Submit</button>
+
+       
+        
+        </form>   
     )
 }
+
+export default CreateComment
 
 
 
