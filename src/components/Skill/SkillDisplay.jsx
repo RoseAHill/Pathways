@@ -11,7 +11,8 @@ const Skill = (props) => {
       title={milestone.milestoneName}
       description={milestone.description}
       comments={milestone.comments}
-      currentUser={props.currentUser} />)
+      currentUser={props.currentUser}
+      milestoneId={milestone._id} />)
   })
 
   // useStates

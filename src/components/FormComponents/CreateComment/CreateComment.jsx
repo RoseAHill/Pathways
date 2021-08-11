@@ -4,16 +4,16 @@ import React, { useState } from 'react';
 
 const CreateComment = (props) => {
     const [text, setText] = useState('')
-
+// Always test your code while you're working. Don't let yourself get too carried away
 
 const handleSubmit = (e) => {
+    console.log(props.currentUser)
     e.preventDefault()
     const formData = {
         content: text,
-        author: props.currentUser._id,
-        refLink: text,
+        author: props.currentUser.profile
      }
-     props.handleCreateComment(formData)
+     props.handleCreateComment(props.milestoneId, formData)
     }
 
     return(

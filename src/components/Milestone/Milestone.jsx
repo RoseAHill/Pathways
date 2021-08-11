@@ -4,7 +4,7 @@ import { createComment } from '../../services/commentService'
 import Comment from '../Comment/Comment'
 import CreateComment from '../FormComponents/CreateComment/CreateComment'
 
-const Milestone = ({ title, description, comments, currentUser }) => {
+const Milestone = ({ title, description, comments, currentUser, milestoneId }) => {
   const commentList = comments.map((comment, index) => {
     return (<Comment
       key={index}
@@ -14,9 +14,10 @@ const Milestone = ({ title, description, comments, currentUser }) => {
     />)
   })
   
-  const handleCreateComment = async (formData) => {
+  const handleCreateComment = async (id, formData) => {
+    console.log("this is a test", id, formData)
     try {
-      const newComment = await createComment(formData)
+      const newComment = await createComment(id, formData)
     } catch (error) {
       throw error
     }
@@ -36,6 +37,7 @@ const Milestone = ({ title, description, comments, currentUser }) => {
           <CreateComment
           currentUser={currentUser}
           handleCreateComment={handleCreateComment}
+          milestoneId={milestoneId}
           />
         </div>
       </div>

@@ -55,7 +55,7 @@ async function signup (req, res) {
       //create the User & Profile
       const user = new User(userData)
       const profile = new Profile(profileData) //make sure you import
-
+      user.profile = profile._id
       //save the models
       await user.save()
       await profile.save()
