@@ -7,12 +7,16 @@ const EditComment = (props) => {
 
 
     return ( 
-        <form className="edit-comment">
+        <div className="edit-comment">
             {
                 props.currentUser &&
+                props.currentUser._id === props.comment.author._id &&
+                <button onClick={() => props.handleUpdateCommentLink(props.comment._id)}>
+                    Edit Link
+                </button>
 
             }
-        </form>
+        </div>
      );
 }
  
