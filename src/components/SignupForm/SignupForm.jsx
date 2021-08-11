@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './SignupForm.module.css'
+import styles from './SignupForm.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = (props) => {
@@ -45,10 +45,10 @@ const SignupForm = (props) => {
             <h3> DISCOVER YOUR PATH</h3>
           </div>
     <form  autoComplete="off" onSubmit={handleSubmit} className="register-form">
-      <div className={styles.inputContainer}>
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="name" className={styles.label}>
           Name
-        </label>
+        </label> */}
 
         <input
           type="text"
@@ -62,9 +62,9 @@ const SignupForm = (props) => {
         />
 
 
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>Email</label>
+      {/* </div> */}
+      {/* <div className={styles.inputContainer}>
+        <label htmlFor="email-input" className={styles.label}>Email</label> */}
 
         <input
           type="email"
@@ -78,11 +78,11 @@ const SignupForm = (props) => {
         />
 
 
-      </div>
-      <div className={styles.inputContainer}>
+      {/* </div> */}
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="password-input" className={styles.label}>
           Password
-        </label>
+        </label> */}
 
 
         <input
@@ -97,11 +97,11 @@ const SignupForm = (props) => {
         />
 
 
-      </div>
-      <div className={styles.inputContainer}>
+      {/* </div> */}
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="confirm-input" className={styles.label}>
           Confirm Password
-        </label>
+        </label> */}
 
 
         <input
@@ -116,13 +116,13 @@ const SignupForm = (props) => {
         />
 
 
-      </div>
+      {/* </div> */}
 
 
-      <div className={styles.inputContainer}>
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="avatar" className={styles.label}>
           Avatar URL
-        </label>
+        </label> */}
 
 
         <input
@@ -136,7 +136,7 @@ const SignupForm = (props) => {
         />
 
 
-      </div>
+      {/* </div> */}
 
 
       <div className={styles.inputContainer}>
@@ -155,7 +155,7 @@ const SignupForm = (props) => {
       <Link className="redirect-link" to="/signin">
         <p>Sign in</p>
       </Link>
-      
+
     </div>
     </div>
     </div>
