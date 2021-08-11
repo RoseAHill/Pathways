@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './LoginForm.module.css'
+import styles from './LoginForm.css'
 import * as authService from '../../services/authService'
 
 const LoginForm = (props) => {
