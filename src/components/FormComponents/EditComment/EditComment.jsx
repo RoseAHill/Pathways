@@ -1,19 +1,19 @@
-// import React from 'react';
+import React from 'react';
 
-// const EditComment = (props) => {
-
-
+const EditComment = (props) => {
 
 
 
-//     return ( 
-//         <form className="edit-comment">
-//             {
-//                 props.currentUser &&
 
-//             }
-//         </form>
-//      );
-// }
+
+    return ( 
+        <form className="edit-comment">
+            {
+                props.currentUser &&
+
+            }
+        </form>
+     );
+}
  
-// export default EditComment;
+export default EditComment;
