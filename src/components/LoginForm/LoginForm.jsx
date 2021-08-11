@@ -27,44 +27,78 @@ const LoginForm = (props) => {
   }
 
   return (
-    <form
-      autoComplete="off"
-      onSubmit={handleSubmit}
-      className={styles.container}
-    >
-      <div className={styles.inputContainer}>
+  <div className="signup-page">
+    <div className="left-container">
+      <div className="form-container">
+        <div className="title-container">
+          <h3>Please enter your login information</h3>
+        </div>
+
+
+    <form autoComplete="off" onSubmit={handleSubmit} className="register-form">
+
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="email-input" className={styles.label}>
           Email
-        </label>
+        </label> */}
+
+
         <input
-          type="text"
+          type="email"
           autoComplete="off"
+          required
           id="email-input"
           value={formData.email}
           name="email"
           onChange={handleChange}
+          placeholder="Email"
         />
-      </div>
-      <div className={styles.inputContainer}>
+
+
+      {/* </div> */}
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="password-input" className={styles.label}>
           Password
-        </label>
+        </label> */}
+
+
         <input
           type="password"
           autoComplete="off"
+          required
           id="password-input"
           value={formData.password}
           name="password"
           onChange={handleChange}
+          placeholder="Password"
         />
-      </div>
-      <div>
-        <button className={styles.button}>Log In</button>
-        <Link to="/">
-          <button>Cancel</button>
-        </Link>
-      </div>
+
+
+      {/* </div> */}
+
+     
+      <button 
+                            autoComplete="off" 
+                            id="submit-button"
+                            type="submit"
+                        >
+                            SIGN IN
+                        </button>
+     
     </form>
+
+    <div className="redirect-container">
+                        <p>Need an account?</p>
+                        <Link className="redirect-link" to="/signup">
+                            <p>Sign Up</p>
+                        </Link>
+                    </div>
+                    </div>
+    </div>
+    <div className="right-container">
+      THIS IS THE RIGHT CONTAINER
+    </div>
+    </div>
   )
 }
  

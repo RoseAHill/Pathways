@@ -9,3 +9,5 @@ export function Button(props) {
     </Link>
   );
 }
+
+export default Button
