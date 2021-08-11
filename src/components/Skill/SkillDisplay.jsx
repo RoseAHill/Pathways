@@ -5,13 +5,13 @@ import Milestone from '../Milestone/Milestone'
 
 
 const Skill = (props) => {
-  console.log(props.currentUser._id);
   const milestoneList = props.milestoneArray.map((milestone, index) => {
     return (<Milestone
       key={index}
       title={milestone.milestoneName}
       description={milestone.description}
-      comments={milestone.comments} />)
+      comments={milestone.comments}
+      currentUser={props.currentUser} />)
   })
 
   // useStates
