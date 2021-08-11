@@ -27,7 +27,9 @@ const Comment = (props) => {
                 {props.content}
             </p>
             {/* TODO: make a reference button component */}
-            <a href={props.refLink} rel="noreferrer" target="_blank">Provided Reference</a>
+            {props.refLink &&
+                <a href={props.refLink} rel="noreferrer" target="_blank">Provided Reference</a>
+            }
             {`-${props.author}`}
 
         </div>
