@@ -1,3 +1,96 @@
-.path-card {
-  background-color: white;
+
+body{
+  background-color: #012336;
+}
+.path-card{
+  position: absolute;
+  height: 370px;
+  width: 95%;
+  max-width: 850px;
+  margin: auto;
+  /* background-color: white; */
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 5px rgba(213, 236, 3, 0.5)
+  
+
+
+}
+
+.path-card .inner-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  height: 360px;
+}
+
+.inner-part .img{
+  height: 260px;
+  width: 260px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px 5px rgba(5, 0, 32, 0.5)
+}
+
+.img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content{
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+}
+
+.content span{
+  color: lightgray;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content .text {
+  font-size: 19px;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  text-align: justify;
+
+}
+
+.content button {
+  display: inline-flex;
+  font-size: 18px;
+      cursor: pointer;
+      color: var(--tt-black);
+      background-color: #d5ec03;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      padding: 8px 20px;
+
+}
+
+.content button:hover{
+ 
+    color: var(--tt-white);
+    border: 2px solid var(--tt-gold);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+
+
+
 }
