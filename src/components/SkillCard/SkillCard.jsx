@@ -1,17 +1,19 @@
 import React from 'react'
 
-// Services
+import Button from '../Misc/Button/Button'
 
-// Components
-
-
-const SkillCard = (props) => {
-  // useStates
-
-  // methods
+const SkillCard = ({ skillName, skillId, skillLevel }) => {
 
   return (
     <>
+      <div className="skill-card">
+        <h4>Level {skillLevel}</h4>
+        <h3>{skillName}</h3>
+        <Button
+          linkTo={`/skill/${skillId}`}
+          title="View Milestones"
+        />
+      </div>
     </>
   )
 }

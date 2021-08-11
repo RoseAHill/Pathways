@@ -46,9 +46,14 @@ const Skill = (props) => {
   return (
     <div className="skill">
       {skillData && milestonesArray ?
-        <>
-        <SkillDisplay currentUser={props.currentUser} skillName={skillData.skillName} milestoneArray={milestonesArray} setMilestonesArray={setMilestonesArray} handleCreateMilestone={handleCreateMilestone} skillId={id}/>
-        </>
+        <SkillDisplay
+          currentUser={props.currentUser}
+          skillName={skillData.skillName}
+          milestoneArray={milestonesArray}
+          setMilestonesArray={setMilestonesArray}
+          handleCreateMilestone={handleCreateMilestone}
+          skillId={id}
+        />
         :
         <div className="loading-container">
           <img src="../../assets/logo-extract" alt="Pathways logo" />
