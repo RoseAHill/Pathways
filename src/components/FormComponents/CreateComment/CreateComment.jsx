@@ -18,7 +18,7 @@ const handleSubmit = (e) => {
     }
 
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="comment">
                 <label>Enter your Comment</label>
             </div>
