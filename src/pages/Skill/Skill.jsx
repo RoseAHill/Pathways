@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
+import './Skill.css'
 // Services
-import { getSkillById } from '../../services/skillService'
+import {
+  getSkillById,
+  handleCreateMilestone as createMilestone
+} from '../../services/skillService'
 
 // Components
 import SkillDisplay from '../../components/Skill/SkillDisplay'
@@ -14,18 +18,17 @@ const Skill = (props) => {
   const [milestonesArray, setMilestonesArray] = useState()
 
 
-  // methods
+  //methods
 
-  // const handleCreateMilestone = async (formData) => {
-  //   try {
-  //     const newMilestone = await 
-  //   } catch (error) {
-  //     throw error
-  //   }
-  // }
+  const handleCreateMilestone = async (formData) => {
+    try {
+      const newMilestone = await createMilestone(formData)
+      // newMilestone.addedBy = props.currentUser
+    } catch (error) {
+      throw error
+    }
+  }
   
-
-
   useEffect(() => {
     const fetchPost = async () => {
       try {
@@ -44,7 +47,7 @@ const Skill = (props) => {
     <div className="skill">
       {skillData && milestonesArray ?
         <>
-        <SkillDisplay skillName={skillData.skillName} milestoneArray={milestonesArray} skillId={id}/>
+        <SkillDisplay currentUser={props.currentUser} skillName={skillData.skillName} milestoneArray={milestonesArray} setMilestonesArray={setMilestonesArray} handleCreateMilestone={handleCreateMilestone} skillId={id}/>
         </>
         :
         <div className="loading-container">

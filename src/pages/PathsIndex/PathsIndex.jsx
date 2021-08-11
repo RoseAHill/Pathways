@@ -31,7 +31,7 @@ const PathsIndex = (props) => {
     <div className="path-index">
       {paths.map((path, idx) => (
       <div key={idx}>
-       <Link to={`/details/${path._id}`}> <h1>{path.title}</h1> </Link> 
+       <Link to={`/path/${path._id}`}> <h1>{path.title}</h1> </Link> 
         
       </div>
       ))}
