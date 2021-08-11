@@ -1,19 +1,23 @@
-// import React from 'react';
+import React from 'react';
 
-// const EditComment = (props) => {
-
-
+const EditComment = (props) => {
 
 
 
-//     return ( 
-//         <form className="edit-comment">
-//             {
-//                 props.currentUser &&
 
-//             }
-//         </form>
-//      );
-// }
+
+    return ( 
+        <div className="edit-comment">
+            {
+                props.currentUser &&
+                props.currentUser._id === props.comment.author._id &&
+                <button onClick={() => props.handleUpdateCommentLink(props.comment._id)}>
+                    Edit Link
+                </button>
+
+            }
+        </div>
+     );
+}
  
-// export default EditComment;
+export default EditComment;
