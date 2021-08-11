@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import styles from './SignupForm.css'
 import * as authService from '../../services/authService'
+import Button from "../Misc/Button/Button"
 
 const SignupForm = (props) => {
   const history = useHistory()
@@ -139,12 +140,11 @@ const SignupForm = (props) => {
       {/* </div> */}
 
 
-      <div className={styles.inputContainer}>
-        <button disabled={validForm} className={styles.button}>Sign Up</button>
-        <Link to="/">
-          <button>Cancel</button>
-        </Link>
-      </div>
+      <button
+                            id="submit-button"
+                            type="submit"
+                        >SIGN UP</button>
+
     </form>
 
 
@@ -152,7 +152,7 @@ const SignupForm = (props) => {
 
     <div className="redirect-container">
       <p>Already have an account?</p>
-      <Link className="redirect-link" to="/signin">
+      <Link className="redirect-link" to="/login">
         <p>Sign in</p>
       </Link>
 

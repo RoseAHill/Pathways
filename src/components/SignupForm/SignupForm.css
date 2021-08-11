@@ -33,13 +33,17 @@
   height: 94vh;
 }
 
+h3, h4, p, h2, h1{
+  color: var(--tt-white)
+}
+
 .left-container{
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-right: 1px solid #292934;
-  background: #12121b;
+  background: var(--tt-dark-bule);
 }
 
 .right-container{
@@ -47,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0B0B12;
+  background: var(--tt-light-blue);
 }
 
 .title-container{
@@ -96,21 +100,30 @@
   background: #0B0B12;
 }
 
-#avatar-button {
-  border: 1px solid #292934;
-  border-radius: 7px;
-  background: #0B0B12;
-  color: #757575;
-  text-align: left;
-}
+
 
 #submit-button{
   margin-top: 22px;
-  background: #7450E9;
+ 
+  color: var(--tt-black);
+  background-color: #d5ec03;
   border: none;
-  color: white;
+  outline: none;
+  
   font-weight: 600;
   border-radius: 7px;
+  cursor:pointer
+}
+
+#submit-button:hover{
+  color: var(--tt-white);
+  border: 2px solid var(--tt-gold);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 6px 18px;
+  transition: all 0.3s ease-out;
+
+
 }
 
 .redirect-container{
@@ -118,14 +131,22 @@
   font-size: 14px;
   font-weight: 500;
   opacity: .5;
-  color: rgb(235, 235, 235);
+  color: rgb(255, 255, 255);
 }
 
 .redirect-link{
-  color: #7450E9;
+  color: #cac2e5;
   text-decoration: none;
   padding-left: 6px;
 }
+
+input:focus {
+  border: 2px solid var(--tt-gold);
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
+
 
 
 @media only screen and (max-width: 900px) {
@@ -147,3 +168,4 @@
 
   }
 }
+
