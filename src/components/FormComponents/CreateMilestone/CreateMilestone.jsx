@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './CreateMilestone.css'
+
 const CreateMilestone = (props) => {
 
     

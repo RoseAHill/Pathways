@@ -4,6 +4,8 @@ import { createComment } from '../../services/commentService'
 import Comment from '../Comment/Comment'
 import CreateComment from '../FormComponents/CreateComment/CreateComment'
 
+import './Milestone.css'
+
 const Milestone = ({ title, description, comments, currentUser, milestoneId }) => {
   const commentList = comments.map((comment, index) => {
     return (<Comment
@@ -33,7 +35,7 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
         <div className="comments-list">
           {commentList}
         </div>
-        <div className="addComment">
+        <div className="add-comment">
           <CreateComment
           currentUser={currentUser}
           handleCreateComment={handleCreateComment}

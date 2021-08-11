@@ -1,0 +1,19 @@
+.milestone {
+  border: purple 2px solid;
+}
+
+.milestone-title {
+  color: green;
+}
+
+.milestone-description {
+  color: red;
+}
+
+.comment-section {
+  border: blue 3px solid;
+}
+
+.add-comment {
+  border: orange 2px solid;
+}
