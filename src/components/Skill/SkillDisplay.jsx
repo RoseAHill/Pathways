@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "./SkillDisplay.css"
 import CreateMilestone from '../FormComponents/CreateMilestone/CreateMilestone'
 
 import Milestone from '../Milestone/Milestone'
