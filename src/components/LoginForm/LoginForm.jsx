@@ -27,6 +27,8 @@ const LoginForm = (props) => {
   }
 
   return (
+  <div className="signup-page">
+    <div className="left-container">
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
@@ -65,6 +67,11 @@ const LoginForm = (props) => {
         </Link>
       </div>
     </form>
+    </div>
+    <div className="right-container">
+      THIS IS THE RIGHT CONTAINER
+    </div>
+    </div>
   )
 }
  
