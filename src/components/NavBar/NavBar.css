@@ -48,12 +48,14 @@
      grid-gap: 10px;
      list-style: none;
      text-align: center;
-     width: 70vw;
-     margin-right: 2rem;
-     justify-content: end;
-
-     
+     width: 90vw;
+     margin-right: 4rem;
+     justify-content: end;     
  }
+
+.nav-menu > a {
+    margin: auto;
+}
 
  .nav-item{
      display: flex;
@@ -64,8 +66,14 @@
  .nav-links{
      color: var(--tt-white);
      text-decoration: none;
-     padding: 0.5rem 1rem
+     padding: 0.5rem 1rem;
+     text-transform: uppercase;
+ }
 
+ .user-guest-name {
+     text-transform: uppercase;
+     padding: 0.5rem 1rem;
+     color: var(--tt-white);
  }
 
  .nav-links:hover{
