@@ -31,13 +31,29 @@
 .create-milestone{
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 4px 4px 2px rgb(17, 128, 255); 
+  box-shadow: 0.6em 0.6em 0.5em #020d1b;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+}
+
+.create-milestone input, .create-milestone textarea {
+  border: 1px solid #292934;
+  border-radius: 7px;
+  background: #0B0B12;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.create-milestone input:focus, .create-milestone textarea:focus{
+  border: 2px solid var(--tt-gold);
+  transition: all 0.3s ease-out;
+  color: white;
 }
 
 .create-milestone h2{

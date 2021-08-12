@@ -1,7 +1,29 @@
 .skill-title {
   color: var(--tt-white);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 1.3rem;
 }
 
 .create-milestone{
   margin-top: 50px;
+}
+
+.skill-milestone{
+  display: flex;
+}
+
+.rainbow-m-around_xx-large{
+  margin-top: 50px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 35rem;
+}
+
+.maybe{
+  background-color: black;
 }

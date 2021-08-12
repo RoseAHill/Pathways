@@ -19,8 +19,8 @@ const handleSubmit = (e) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <Input
+        <form  className = "comment-form" onSubmit={handleSubmit}>
+            <textarea
                 required
                 autoComplete='off'
                 label="Add a Comment"
@@ -31,17 +31,7 @@ const handleSubmit = (e) => {
             />
 
             <Button type="submit" label="Submit" variant="border" className="rainbow-m-around_medium" />
-{/* 
-            <input
-            required
-            autoComplete='off'
-            placeholder="Comment"
-            name="comment_text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            ></input>
 
-            <button type="submit">Submit</button> */}
 
        
         
