@@ -7,10 +7,12 @@ const CreateMilestone = (props) => {
     
     return(
         <div className="create-milestone">
+            <h2> ADD MILESTONE</h2>
 
-            <form className="milestone-form" onSubmit={props.handleSubmit} >
-               <div>
-                   <label htmlFor="milestone-title"> Add Milestone </label>
+            <form onSubmit={props.handleSubmit} >
+
+               <div className = "input-field">
+                   <label htmlFor="milestone-title"> </label>
                    <input
                    required
                    autoComplete="off"
@@ -20,8 +22,10 @@ const CreateMilestone = (props) => {
                    onChange={e => props.setMilestoneName(e.target.value)}
                    id="milestone-title"
                    /> 
+                   </div>
 
-                <label htmlFor="milestone-description"> Milestone Description </label>
+                <div className="input-field">
+                <label htmlFor="milestone-description">  </label>
                    <textarea
                    required
                    autoComplete="off"
@@ -31,11 +35,13 @@ const CreateMilestone = (props) => {
                    onChange={e => props.setMilestoneDescription(e.target.value)}
                    id="milestone-description"
                    />
-
+                    </div>
+                    <div className = "milestone-btn">
                    <button type="submit">
                         Add Milestone
                    </button>
-               </div>   
+                   </div>
+             
             </form> 
         </div>
 

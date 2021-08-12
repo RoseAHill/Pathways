@@ -1,3 +1,7 @@
 .skill-title {
   color: var(--tt-white);
 }
+
+.create-milestone{
+  margin-top: 50px;
+}
