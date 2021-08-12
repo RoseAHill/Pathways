@@ -7,7 +7,8 @@ const SkillCard = ({ skillName, skillId, skillLevel }) => {
 
   return (
     <>
-    <div className = "row">
+    <section className="skills-section sec-padding" id="skills">
+      <div className="container">
       <div className="skill-card">
         <a href={`/skill/${skillId}`}>
         <div className="skill-img">
@@ -24,6 +25,7 @@ const SkillCard = ({ skillName, skillId, skillLevel }) => {
         </a>
       </div>
       </div>
+      </section>
     </>
   )
 }
