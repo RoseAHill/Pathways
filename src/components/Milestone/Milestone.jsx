@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // services
-import { createComment, updateCommentLink } from '../../services/commentService'
+import { createComment, deleteComment} from '../../services/commentService'
 
 // components
 import Comment from '../Comment/Comment'
@@ -16,6 +16,7 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
     return (<Comment
       // handleUpdateCommentLink={handleUpdateCommentLink}
       key={index}
+      handleDeleteComment={handleDeleteComment}
       commentId={comment._id}
       milestoneId={milestoneId}
       currentUser={currentUser}
@@ -25,12 +26,18 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
     />)
   })
 
-  
-  
   const handleCreateComment = async (id, formData) => {
     console.log("this is a test", id, formData)
     try {
-      const newComment = await createComment(id, formData)
+      await createComment(id, formData)
+    } catch (error) {
+      throw error
+    }
+  }
+
+  const handleDeleteComment = async (commentId) => {
+    try {
+      await deleteComment(milestoneId, commentId)
     } catch (error) {
       throw error
     }
