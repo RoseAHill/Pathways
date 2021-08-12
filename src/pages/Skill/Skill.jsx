@@ -22,8 +22,7 @@ const Skill = (props) => {
 
   const handleCreateMilestone = async (formData) => {
     try {
-      const newMilestone = await createMilestone(formData)
-      // newMilestone.addedBy = props.currentUser
+      await createMilestone(formData)
     } catch (error) {
       throw error
     }
