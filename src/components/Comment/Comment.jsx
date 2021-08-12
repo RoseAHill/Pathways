@@ -4,7 +4,7 @@ import './Comment.css'
 //Components
 import EditComment from '../FormComponents/EditComment/EditComment'
 import DeleteButton from './DeleteButton';
-
+import { Button } from 'react-rainbow-components';
 
 //Services
 import{
@@ -41,11 +41,15 @@ const Comment = (props) => {
         <div className="comment">
             <p className="comment-content">
                 {props.content}
+                {" -Pathways User"}
             </p>
-            {props.refLink &&
-                <a href={currentRefLink} rel="noreferrer" target="_blank">Provided Reference</a>
-            }
-            {"-Pathways User"}
+            <p className="comment-subtext">
+                {props.refLink &&
+                    <Button
+                    linkTo={currentRefLink}
+                    label="Comment Reference"
+                    />
+                }
             {props.currentUser &&
                 props.currentUser.profile === props.author && 
             <><EditComment 
@@ -60,6 +64,7 @@ const Comment = (props) => {
             commentId={props.commentId}
             /></>
             }
+            </p>
 
         </div>
     )

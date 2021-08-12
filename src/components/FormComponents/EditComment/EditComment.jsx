@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button, Input } from 'react-rainbow-components';
 
 //components
 import './EditComment.css'
@@ -10,23 +11,21 @@ const [showEditForm, setShowEditForm] = useState(false) //will trigger if we see
     return ( 
         
         <div className="edit-comment">
-                <button onClick={() => setShowEditForm(!showEditForm)}> 
-                    Edit Link
-                </button>
+            <Button
+                onClick={() => setShowEditForm(!showEditForm)}
+                label="Edit Link"
+            />
 
         <form onSubmit={props.handleSubmit}  className={`edit-comment-form${!showEditForm && " hide-comment-form" }`}>
             {/* placeholder text of new link and button to submit */}
-            <label htmlFor="edit-comment-form">Edit</label>
-            <input
-            required
-            autoComplete='off'
-            placeholder="New Link"
-            name="refLink"
-            value={props.newRefLink}
-            onChange={(e) => props.setNewRefLink(e.target.value)}
-            id="edit-comment-input"
+            <Input
+                autoComplete='off'
+                placeholder="New Link"
+                name="refLink"
+                value={props.newRefLink}
+                onChange={(e) => props.setNewRefLink(e.target.value)}
             />
-            <button type="submit">Update</button>
+            <Button type="submit" label="Update Link" variant="border" className="rainbow-m-around_medium" />
         </form>
         </div>
      );

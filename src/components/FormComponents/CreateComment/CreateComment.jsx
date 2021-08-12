@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button, Input } from 'react-rainbow-components'
 import "./CreateComment.css"
 
 //components
@@ -19,10 +20,18 @@ const handleSubmit = (e) => {
 
     return(
         <form onSubmit={handleSubmit}>
-            <div className="create-comment-title">
-                <label>Enter your Comment</label>
-            </div>
+            <Input
+                required
+                autoComplete='off'
+                label="Add a Comment"
+                placeholder="Comment"
+                className="comment-form-input"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+            />
 
+            <Button type="submit" label="Submit" variant="border" className="rainbow-m-around_medium" />
+{/* 
             <input
             required
             autoComplete='off'
@@ -32,7 +41,7 @@ const handleSubmit = (e) => {
             onChange={(e) => setText(e.target.value)}
             ></input>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button> */}
 
        
         
