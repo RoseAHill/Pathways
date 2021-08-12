@@ -73,7 +73,7 @@
     margin: 0 0 10px;
   }
 
-  p {
+  .instruction-section p {
     font-size: 16px;
     color: var(--tt-white);
   }
