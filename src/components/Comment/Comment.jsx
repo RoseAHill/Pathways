@@ -3,6 +3,7 @@ import './Comment.css'
 
 //Components
 import EditComment from '../FormComponents/EditComment/EditComment'
+import DeleteButton from './DeleteButton';
 
 
 //Services
@@ -23,14 +24,14 @@ const Comment = (props) => {
         const formData = {
             refLink: newRefLink
         }
-        const res = await handleUpdateCommentLink(formData)
+            await handleUpdateCommentLink(formData)
         setCurrentRefLink(newRefLink)
     
     }
 
     const handleUpdateCommentLink = async (refLink) => {
         try {
-            const editLink = await updateCommentLink(refLink, props.commentId, props.milestoneId)
+            await updateCommentLink(refLink, props.commentId, props.milestoneId)
         } catch (error) {
             throw error
         }
@@ -49,11 +50,16 @@ const Comment = (props) => {
             {"-Pathways User"}
             {props.currentUser &&
                 props.currentUser.profile === props.author && 
-            <EditComment 
+            <><EditComment 
             handleSubmit={handleSubmit}
             newRefLink={newRefLink}
             setNewRefLink={setNewRefLink}
             />
+            <DeleteButton 
+            currentUser={props.currentUser}
+            commentAuthor={props.author}
+            handleDeleteComment={props.handleDeleteComment}
+            /></>
             }
 
         </div>
