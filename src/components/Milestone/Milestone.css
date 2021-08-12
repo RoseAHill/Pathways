@@ -8,7 +8,8 @@
 }
 
 
-.tab input { display: none; }
+.tab input[type="checkbox"] { display: none; }
+
 
 
 .tab label {
