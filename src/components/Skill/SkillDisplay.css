@@ -3,16 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: yellow; */
 }
 
-/* .skill-title {
-  background-color: darkblue;
-} */
-
-.milestone{
-  background-color: rgb(1, 1, 22);
+.skill-title{
+color: black;
 }
-.pleaseWork{
-  background-color: grey;
+
+.create-milestone{
+  margin-top: 100px;
 }
