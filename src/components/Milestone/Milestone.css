@@ -1,19 +1,49 @@
-.milestone {
-  border: purple 2px solid;
+.tab {
+  position: relative;
+  max-width: 600px;
 }
 
-.milestone-title {
-  color: green;
+.milestone-title{
+  background-color: rgb(48, 51, 216);
 }
 
-.milestone-description {
-  color: red;
+
+.tab input { display: none; }
+
+
+.tab label {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  background: #2d5faf;
+  cursor: pointer;
 }
 
-.comment-section {
-  border: blue 3px solid;
-}
 
-.add-comment {
-  border: orange 2px solid;
+.tab .tab-content {
+  background: #ccdef9;
+ 
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
 }
+.tab .tab-content p { padding: 10px; }
+
+
+.tab input:checked ~ .tab-content { max-height: 100vh; }
+
+
+.tab label::after {
+  content: "\25b6";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: all 0.4s;
+}
+.tab input:checked ~ label::after { transform: rotate(90deg); }
+
+
+html, body { font-family: arial, sans-serif; }

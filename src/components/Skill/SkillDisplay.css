@@ -1,3 +1,14 @@
-.skill-title {
-  border: hotpink 2px solid;
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-title{
+color: black;
+}
+
+.create-milestone{
+  margin-top: 100px;
 }
