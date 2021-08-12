@@ -154,6 +154,8 @@
     }
     
     }
+
+   
     
     @media (max-width: 767px){
       .home-text,
@@ -172,6 +174,7 @@
       .sec-padding {
         padding: 70px 0;
       }
+      
       
     }
     
