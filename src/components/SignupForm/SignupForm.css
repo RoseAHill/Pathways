@@ -77,7 +77,7 @@
   border-radius: 100%;
 }
 
-.form-container {
+.home-form-container {
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -91,14 +91,14 @@
   width: 100%;
 }
 
-.form-container input, select, #submit-button {
+.home-form-container input, select, #submit-button {
   padding: 16px;
   font-size: 16px;
   margin-bottom: 16px;
   color: rgb(200, 200, 200);
 }
 
-.form-container input {
+.home-form-container input {
   border: 1px solid #292934;
   border-radius: 7px;
   background: #0B0B12;

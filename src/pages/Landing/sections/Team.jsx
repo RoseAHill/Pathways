@@ -1,5 +1,9 @@
 import React from "react"
 import "./Team.css"
+import jr from "../images/jr.png"
+import sj from "../images/sj.png"
+import rosie from "../images/rosie.png"
+
 
 const Team = () => {
     return (
@@ -13,7 +17,7 @@ const Team = () => {
             <div className="team-content">
                 <div className="image">
                 <img
-                src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=6&m=1168369629&s=612x612&w=0&h=TdA36g-cvBexDNmOIN0oQwZ58x6GPAaXTI_exJQGzqY="
+                src={rosie}
                 alt="home-img"
               />
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./SignupForm.css";
+import Animation from "../../components/Animation/Animation"
 import * as authService from "../../services/authService";
 
 const SignupForm = (props) => {
@@ -40,7 +41,7 @@ const SignupForm = (props) => {
   return (
     <div className="signup-page">
       <div className="left-container">
-        <div className="form-container">
+        <div className="home-form-container">
           <div className="title-container">
             <h1>Create an Account</h1>
             <h3> DISCOVER YOUR PATH</h3>
@@ -117,7 +118,7 @@ const SignupForm = (props) => {
           </div>
         </div>
       </div>
-      <div className="right-container">THIS IS THE RIGHT CONTAINER</div>
+      <div className="right-container"><Animation/></div>
     </div>
   );
 };
