@@ -3,15 +3,13 @@ body{
   background-color: #012336;
 }
 .path-card{
-  position: absolute;
   height: 370px;
   width: 95%;
   max-width: 850px;
   margin: auto;
-  /* background-color: white; */
   border-radius: 10px;
-  box-shadow: 0 1px 1px 5px rgba(213, 236, 3, 0.5)
-  
+  box-shadow: 0 1px 1px 5px rgba(213, 236, 3, 0.5);
+  margin: 4rem auto;
 
 
 }
@@ -64,7 +62,6 @@ body{
   font-size: 19px;
   color: white;
   margin-bottom: 30px;
-  line-height: 1.5rem;
   text-align: justify;
 
 }

@@ -47,14 +47,14 @@
    border-radius: 20px;
 }
 
- .card .content
+ .card .team-content
 {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
 }
- .content .image
+ .team-content .image
 {
    width: 180px;
    height: 180px;
@@ -63,7 +63,7 @@
    margin-bottom: 20px;
    overflow: hidden;
 }
-/* .team-container .card .content .image img
+/* .team-container .card .team-content .image img
 {
    position: absolute;
    top: 0;

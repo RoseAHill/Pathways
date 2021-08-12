@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./PathCard.css"
-import image from "./webdev.png"
 
 // Services
 
@@ -17,15 +16,18 @@ const PathCard = (props) => {
     <>
      <div className="path-card">
        <div className="inner-part">
-         <label htmlFor="" class="img">
-           <img src="https://www.frontline.com.sg/wp-content/uploads/2017/06/web-development.jpg" alt="" />
+         <label htmlFor="" className="img">
+           <img src={props.iconImg} alt={`${props.pathName} icon`} />
          </label>
          <div className="content">
            <span> PATHWAYS</span>
-           <div class="title"> TITLE GOES HERE</div>
-           <div className="text">DESCRIPTION GOES HERE<br/>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit labore alias, expedita commodi deserunt. Magni magnam vero a vel.</div>
+           <div className="title">{props.pathName}</div>
+           <div className="text">
+             {props.description}
+           </div>
+           <Link to={props.pathLink}>
            <button>VIEW SKILLS</button>
+           </Link>
          </div>
        </div>
      </div>
