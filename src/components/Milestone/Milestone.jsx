@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AccordionSection } from "react-rainbow-components";
 
 // services
 import { createComment, deleteComment } from "../../services/commentService";
@@ -52,12 +53,11 @@ const Milestone = ({
     }
   };
   return (
+    <AccordionSection className="accordion-title" label={(
+    <>
+    <h3 className="milestone-title">{title}- {description}</h3></>
+    )}>
     <div className="milestone">
-      <div className="milestone-info">
-        <h3 className="milestone-title">{title}</h3>
-        <p className="milestone-description">{description}</p>
-      </div>
-
       <div className="comment-section">
         <div className="comments-list">{commentList}</div>
       </div>
@@ -69,6 +69,7 @@ const Milestone = ({
         />
       </div>
     </div>
+    </AccordionSection>
   );
 };
 

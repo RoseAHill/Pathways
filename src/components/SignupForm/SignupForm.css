@@ -33,7 +33,11 @@
   height: 94vh;
 }
 
-h3, h4, p, h2, h1{
+.signup-page h3,
+.signup-page h4,
+.signup-page p,
+.signup-page h2,
+.signup-page h1{
   color: var(--tt-white)
 }
 
@@ -87,7 +91,7 @@ h3, h4, p, h2, h1{
   width: 100%;
 }
 
-.form-container input, select, button {
+.form-container input, select, #submit-button {
   padding: 16px;
   font-size: 16px;
   margin-bottom: 16px;
