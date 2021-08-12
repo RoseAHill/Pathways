@@ -47,7 +47,7 @@
 }
 
 .rainbow-m-around_medium:hover{
-  color: var(--tt-dark-blue);
+  color: var(--tt-yellow);
   border: 2px solid var(--tt-gold);
   border-radius: 4px;
   background-color: transparent;
@@ -56,7 +56,7 @@
 }
 
 .form-container{
-
+ color: whitesmoke;
  padding-left: 28rem;
 }
 

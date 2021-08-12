@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-rainbow-components';
+import './Comment.css'
 
 const DeleteButton = (props) => {
     return ( 

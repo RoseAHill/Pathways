@@ -1,8 +1,18 @@
-.hide-comment-form{
-    display: none;
-}
-
+.edit-comment,
 .edit-comment-form {
     display: flex;
     flex-direction: row;
+}
+
+.edit-comment button {
+    color: #012336;
+}
+
+.edit-comment button:hover,
+.edit-comment button:focus {
+    color: var(--tt-orange);
+}
+
+.hide-comment-form{
+    display: none;
 }

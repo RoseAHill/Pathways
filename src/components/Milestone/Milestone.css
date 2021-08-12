@@ -2,3 +2,6 @@
   font-size: 1.8rem;
 }
 
+.accordion-title section {
+  background-color: var(--tt-dark-blue);
+}

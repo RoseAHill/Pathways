@@ -34,15 +34,23 @@
   padding-top: 10px;
 }
 
-.comment-subtext > a {
+.comment-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.comment-flex-left > a {
   text-decoration: none;
+  color: whitesmoke
 }
 
-.comment-subtext a:hover {
-  color: var(--tt-black);
+.comment-flex-left a:hover {
+  color: var(--tt-yellow);
 }
 
-.comment-subtext {
+.comment-flex-left {
   display: flex;
 }
 
@@ -54,4 +62,19 @@
   /* color: black; */
   border-radius: 5px;
   background-color: var(--tt-dark-blue);
+}
+
+.author-options {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+}
+
+.delete-buttons button {
+  color: #012336;
+}
+
+.delete-buttons button:hover,
+.delete-buttons button:focus {
+  color: var(--tt-orange);
 }
