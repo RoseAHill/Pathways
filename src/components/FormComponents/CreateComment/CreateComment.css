@@ -1,3 +1,31 @@
+:root {
+  font-size: 62.5%;
+  /* vars */
+  --tt-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --tt-white: #D8E2DC;
+  --tt-black: #220C10;
+  --tt-red: #F94144;
+  --tt-orange: #F3722C;
+  --tt-gold: #F8961E;
+  --tt-yellow: #F9C74F;
+  --tt-green: #90BE6D;
+  --tt-turquoise: #43AA8B;
+  --tt-blue: #577590;
+  --tt-dark: #0f0406;
+  --tt-darker: #180000;
+  --tt-white-shadow: rgba(255, 255, 255, 0.8);
+--tt-dark-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+--tt-slight: #3f282c;
+--tt-slight2:rgb(53, 32, 35)c;
+--tt-slight-dark : #251518;
+--tt-slight-shadow: 0 0 15px rgba(78, 43, 43, 0.2);
+--tt-light-blue:  #012336;
+--tt-dark-blue:  #001a29;
+--tt-yellow: #d5ec03;
+
+}
+
 .comment-form-input label {
   align-self: flex-start;
 }
@@ -5,16 +33,21 @@
 .rainbow-m-around_medium{
   font-size: 18px;
   cursor: pointer;
-  color: var(--tt-black);
-  background-color: #d5ec03;
+  color: whitesmoke;
+  background-color: var(--tt-dark-blue);
   border: none;
   outline: none;
   border-radius: 4px;
+  
   /* padding: 8px 20px; */
 }
 
+#comment-button{
+  margin-left: 10rem;
+}
+
 .rainbow-m-around_medium:hover{
-  color: var(--tt-white);
+  color: var(--tt-dark-blue);
   border: 2px solid var(--tt-gold);
   border-radius: 4px;
   background-color: transparent;
@@ -22,7 +55,33 @@
   transition: all 0.3s ease-out;
 }
 
-.comment-form label{
+.form-container{
+
+ padding-left: 28rem;
+}
+
+.comment-form{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+}
+.comment-form textarea{
   resize: none;
   height: 80px;
+  width: 30rem;
+  border: 1px solid #292934;
+  border-radius: 7px;
+  background: var(--tt-dark-blue);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.comment-form textarea:focus{
+  border: 2px solid var(--tt-gold);
+  transition: all 0.3s ease-out;
+  color: white;
 }
