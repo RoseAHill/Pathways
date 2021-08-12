@@ -10,7 +10,7 @@ const Team = () => {
 <div className="team-container">
   
         <div className="card">
-            <div className="content">
+            <div className="team-content">
                 <div className="image">
                 <img
                 src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=6&m=1168369629&s=612x612&w=0&h=TdA36g-cvBexDNmOIN0oQwZ58x6GPAaXTI_exJQGzqY="
@@ -22,8 +22,8 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                    <a href="https://www.linkedin.com/in/rosieahill/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://github.com/RoseAHill" target = "_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/rosieahill/" target = "_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/RoseAHill" target = "_blank" rel="noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
