@@ -3,6 +3,10 @@
   max-width: 600px;
 }
 
+.milestone-title{
+  background-color: rgb(48, 51, 216);
+}
+
 
 .tab input { display: none; }
 
