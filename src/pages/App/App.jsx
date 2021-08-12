@@ -28,6 +28,12 @@ const App = () => {
 		setUser(authService.getUser())
 	}
 
+	// This is a workaround! Look away David please for the love of god, just ignore this.
+  const imageArray = [
+    "https://www.frontline.com.sg/wp-content/uploads/2017/06/web-development.jpg",
+    "https://img2.goodfon.com/wallpaper/nbig/1/17/povar-produkty-pasta-gotovka.jpg"
+  ]
+
 	return (
 		<>
 			<NavBar user={user} handleLogout={handleLogout}/>
@@ -53,11 +59,11 @@ const App = () => {
 				</Route>
 
 				<Route exact path='/paths'>
-					<PathsIndex />
+					<PathsIndex imageArray={imageArray} />
 				</Route>
 
 				<Route path='/path/:id'>
-					<Path />
+					<Path imageArray={imageArray} />
 				</Route>
 
 				<Route path='/skill/:id'>

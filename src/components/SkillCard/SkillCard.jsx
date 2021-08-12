@@ -3,8 +3,9 @@ import "./SkillCard.css"
 
 import Button from '../Misc/Button/Button'
 
-const SkillCard = ({ skillName, skillId, skillLevel }) => {
+const SkillCard = ({ skillName, skillId, skillLevel, skillImage }) => {
 
+  // old image: "https://istefan.ro/img/hero/web-developer-newsletter-coder-stefan-iordache.jpg"
   return (
     
     <section className="skills-section" >
@@ -12,7 +13,7 @@ const SkillCard = ({ skillName, skillId, skillLevel }) => {
       <div className="skill-card">
         <a href={`/skill/${skillId}`}>
         <div className="skill-img">
-        <img src="https://istefan.ro/img/hero/web-developer-newsletter-coder-stefan-iordache.jpg" alt="course-img"/>
+        <img src={skillImage} alt="course-img"/>
         </div>
         <div class="skill-info">
           <div className = "skill-level">

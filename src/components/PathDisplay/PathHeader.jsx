@@ -13,8 +13,8 @@ const PathHeader = ({ pathBanner, pathName, pathDescription }) => {
    
       
      <div className="section-title">
-      <h2>{pathName}</h2>
-      <p>{pathDescription}</p>
+      <h2 className="path-title">{pathName}</h2>
+      <p className="path-description">{pathDescription}</p>
       </div>
      
     </div>

@@ -2,12 +2,13 @@ import React from 'react'
 import SkillCard from '../SkillCard/SkillCard'
 import PathHeader from './PathHeader'
 
-const PathDisplay = ({ pathBanner, pathName, pathDescription, skillsArray }) => {
+const PathDisplay = ({ pathBanner, pathName, pathDescription, skillsArray, skillImage }) => {
   const skillCards = skillsArray.map((skill, index) => (
     <SkillCard
       skillName={skill.skillName}
       skillId={skill._id}
       skillLevel={index + 1}
+      skillImage={skillImage}
       key={index}
     />
   ))

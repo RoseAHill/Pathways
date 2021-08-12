@@ -15,7 +15,9 @@ const Path = (props) => {
   // useStates
   const [pathData, setPathData] = useState()
   const [skillsArray, setSkillsArray] = useState()
-
+  // This is a workaround! Look away David please for the love of god, just ignore this.
+  const pathIdCooking = "611160dbe1f7503fdd2365c1"
+  
   // methods
   useEffect(() => {
     const fetchPath = async () => {
@@ -40,6 +42,7 @@ const Path = (props) => {
           pathDescription={pathData.description}
           pathName={pathData.title}
           skillsArray={skillsArray}
+          skillImage={pathIdCooking === id ? props.imageArray[1] : props.imageArray[0]}
         />
         :
         <div className="loading-container">
