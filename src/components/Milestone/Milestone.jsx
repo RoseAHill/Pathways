@@ -1,20 +1,31 @@
-import React from 'react'
-import { createComment } from '../../services/commentService'
+import React, { useState } from 'react'
 
+// services
+import { createComment, updateCommentLink } from '../../services/commentService'
+
+// components
 import Comment from '../Comment/Comment'
 import CreateComment from '../FormComponents/CreateComment/CreateComment'
+
 
 import './Milestone.css'
 
 const Milestone = ({ title, description, comments, currentUser, milestoneId }) => {
+  
   const commentList = comments.map((comment, index) => {
     return (<Comment
+      // handleUpdateCommentLink={handleUpdateCommentLink}
       key={index}
+      commentId={comment._id}
+      milestoneId={milestoneId}
+      currentUser={currentUser}
       content={comment.content}
       refLink={comment.refLink}
-      author="Pathways User" //TODO: find author on backend
+      author={comment.author}//TODO: find author on backend
     />)
   })
+
+  
   
   const handleCreateComment = async (id, formData) => {
     console.log("this is a test", id, formData)
