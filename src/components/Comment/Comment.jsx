@@ -45,10 +45,9 @@ const Comment = (props) => {
             </p>
             <p className="comment-subtext">
                 {props.refLink &&
-                    <Button
-                    linkTo={currentRefLink}
-                    label="Comment Reference"
-                    />
+                    
+                    <a href={currentRefLink}>SUGGESTED REFERENCE</a>
+
                 }
             {props.currentUser &&
                 props.currentUser.profile === props.author && 

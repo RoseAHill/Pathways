@@ -19,8 +19,11 @@ const handleSubmit = (e) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <Input
+        <div className = "form-container">
+              <h1> ADD A COMMENT</h1>
+        <form  className = "comment-form" onSubmit={handleSubmit}>
+          
+            <textarea
                 required
                 autoComplete='off'
                 label="Add a Comment"
@@ -29,23 +32,15 @@ const handleSubmit = (e) => {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
             />
+                    <div>
+            <Button id="comment-button"type="submit" label="SUBMIT" variant="border" className="rainbow-m-around_medium" />
+            </div>
 
-            <Button type="submit" label="Submit" variant="border" className="rainbow-m-around_medium" />
-{/* 
-            <input
-            required
-            autoComplete='off'
-            placeholder="Comment"
-            name="comment_text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            ></input>
-
-            <button type="submit">Submit</button> */}
 
        
         
         </form>   
+        </div>
     )
 }
 

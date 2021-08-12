@@ -38,8 +38,9 @@ const Skill = (props) => {
   return (
     <div className="skill" >
       <h1 className="skill-title">{props.skillName}</h1>
+      <div className = "skill-milestone">
       <div className="rainbow-m-around_xx-large">
-        <Accordion id="milestone-accordion">
+        <Accordion id="milestone-accordion" >
           {milestoneList}
         </Accordion>
       </div>
@@ -51,6 +52,7 @@ const Skill = (props) => {
         setMilestoneName={setMilestoneTitle}
         setMilestoneDescription={setMilestoneDescription}
         />
+        </div>
       </div>
     </div>
   )
