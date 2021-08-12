@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
+import { Accordion } from "react-rainbow-components";
 import "./SkillDisplay.css"
-import CreateMilestone from '../FormComponents/CreateMilestone/CreateMilestone'
 
+import CreateMilestone from '../FormComponents/CreateMilestone/CreateMilestone'
 import Milestone from '../Milestone/Milestone'
 
 
@@ -37,7 +38,11 @@ const Skill = (props) => {
   return (
     <div className="skill" >
       <h1 className="skill-title">{props.skillName}</h1>
-      {milestoneList}
+      <div className="rainbow-m-around_xx-large">
+        <Accordion id="milestone-accordion">
+          {milestoneList}
+        </Accordion>
+      </div>
       <div className="create-milestone">
         <CreateMilestone 
         handleSubmit={handleSubmit}
