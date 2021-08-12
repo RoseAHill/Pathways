@@ -11,7 +11,7 @@ const CreateMilestone = (props) => {
 
             <form onSubmit={props.handleSubmit} >
 
-               <div className = "input-field">
+               <div className = "input-field title">
                    <label htmlFor="milestone-title"> </label>
                    <input
                    required
@@ -36,11 +36,11 @@ const CreateMilestone = (props) => {
                    id="milestone-description"
                    />
                     </div>
-                    <div className = "milestone-btn">
-                   <button type="submit">
+                   
+                   <button className = "milestone-btn" type="submit">
                         Add Milestone
                    </button>
-                   </div>
+                
              
             </form> 
         </div>
