@@ -19,7 +19,9 @@ const PathDisplay = ({ pathBanner, pathName, pathDescription, skillsArray }) => 
         pathName={pathName}
         pathDescription={pathDescription}
       />
+      <div className="skill-display">
       {skillCards}
+      </div>
     </div>
   )
 }
