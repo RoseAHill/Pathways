@@ -35,7 +35,7 @@ const Skill = (props) => {
   }
 
   return (
-    <div className="skill">
+    <div className="skill" >
       <h1 className="skill-title">{props.skillName}</h1>
       {milestoneList}
       <div>

@@ -26,11 +26,18 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
   }
 
   return (
+   <div class = "tabs">
+     <div class = "tab">
+     <input type="checkbox" id="chck1" />
+
     <div className="milestone">
       <div className="milestone-info">
+        <label class="tab-label" for="chck1">
         <h3 className="milestone-title">{title}</h3>
         <p className="milestone-description">{description}</p>
+        </label>
       </div>
+      <div class="tab-content">
       <div className="comment-section">
         <div className="comments-list">
           {commentList}
@@ -43,6 +50,9 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
           />
         </div>
       </div>
+      </div>
+    </div>
+    </div>
     </div>
   )
 }

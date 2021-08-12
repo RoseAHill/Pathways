@@ -1,19 +1,21 @@
 .milestone {
   border: purple 2px solid;
+  background-color: red;
+  margin-bottom: 20px;
 }
 
-.milestone-title {
+/* .milestone-title {
   color: green;
 }
 
 .milestone-description {
   color: red;
-}
+} */
 
 .comment-section {
   border: blue 3px solid;
 }
 
-.add-comment {
+/* .add-comment {
   border: orange 2px solid;
-}
+} */

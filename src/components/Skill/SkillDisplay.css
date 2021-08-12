@@ -1,3 +1,18 @@
-.skill-title {
-  border: hotpink 2px solid;
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+/* .skill-title {
+  background-color: darkblue;
+} */
+
+.milestone{
+  background-color: rgb(1, 1, 22);
+}
+.pleaseWork{
+  background-color: grey;
 }
