@@ -40,8 +40,8 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                    <a href="https://www.linkedin.com/in/junioradessu/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://github.com/Jadessu" target = "_blank"><i class="fab fa-github" 
+                    <a href="https://www.linkedin.com/in/junioradessu/" target = "_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Jadessu" target = "_blank" rel="noreferrer"><i class="fab fa-github" 
                     
                     
                     aria-hidden="true"></i></a>
@@ -61,8 +61,8 @@ const Team = () => {
                     <h5>Software Engineer</h5>
                 </div>
                 <div className="socials">
-                <a href= "https://www.linkedin.com/in/sjgal-ed/" target = "_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://github.com/sarahgaled" target = "_blank"><i class="fab fa-github" 
+                <a href= "https://www.linkedin.com/in/sjgal-ed/" target = "_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/sarahgaled" target = "_blank" rel="noreferrer"><i class="fab fa-github" 
                     
                    
                     
