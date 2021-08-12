@@ -74,6 +74,9 @@
    object-fit: cover;
 } */
 
+.team-container .image:hover{
+   background-color: var(--tt-gold)
+}
  .info h4
 {
    color: #e0d9f3;
