@@ -66,6 +66,7 @@ const Milestone = ({
           currentUser={currentUser}
           handleCreateComment={handleCreateComment}
           milestoneId={milestoneId}
+          milestoneTitle={title}
         />
       </div>
     </div>

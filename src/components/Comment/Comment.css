@@ -1,0 +1,15 @@
+.comment-content, .comment-subtext {
+  font-size: 1.5rem;
+}
+
+.comment-subtext > a {
+  text-decoration: none;
+}
+
+.comment-subtext > a > button:hover {
+  color: var(--tt-black);
+}
+
+.comment-subtext {
+  display: flex;
+}

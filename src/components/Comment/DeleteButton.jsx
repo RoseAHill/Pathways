@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-rainbow-components';
 
 const DeleteButton = (props) => {
     return ( 
@@ -6,9 +7,11 @@ const DeleteButton = (props) => {
             {
                 props.currentUser &&
                 props.currentUser.profile === props.commentAuthor &&
-                <button onClick={() => props.handleDeleteComment(props.commentId)}>
-                    🗑
-                </button>
+                <Button
+                    onClick={() => props.handleDeleteComment(props.commentId)}
+                    title="Delete"
+                    label="🗑"
+                />
             }
         </div>
      );

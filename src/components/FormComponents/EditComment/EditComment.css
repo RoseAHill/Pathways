@@ -1,3 +1,8 @@
 .hide-comment-form{
     display: none;
 }
+
+.edit-comment-form {
+    display: flex;
+    flex-direction: row;
+}
