@@ -1,69 +1,25 @@
-# MERN Stack with OAuth Template
+# Pathways
 
-This is a MERN Stack template that includes JWT Authentication.
+It is an app to track your progress in learning a new skill. It also has social features to help spread encouragement in users learning journey. Users can create "Pathways", which can be seen as a set of skill trees towards learning a subject. Each Pathway has multiple "checkpoints", aka skill trees, and inside each checkpoint there is a checklist of milestones. To give an example, the "Web Development Pathway" will be structured kind of like David's lecture materials in notion. the checkpoints will be "javascript" or "css", etc, and inside each one will have the milestones of skills within that subject. The social features come in as comments on the pathways and checkpoints. Users can leave comments/words of encouragement, and others can like, applaud, agree, etc on the comments. @Junior 🚀
 
-Use this to go build things! 🚀
+## Getting Started
 
-## To Use This Template
+>App Link:
+- [Pathways](https://learn-with-pathways.herokuapp.com/)
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+>Trello Board:
+- [Trello](https://trello.com/b/7WLSQJsP/pathways-by-team-trifecta)
 
-```bash
-git clone https://github.com/SEI-Remote/mern-stack-jwt-auth-template <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+>Wireframes:
+- [Wireframes](https://whimsical.com/pathways-NJhkun5pK8vKygZ3JdYaCY)
 
-Once you are in the project directory:
+#### ERD:
+![](images/Pathways-ERD.png)
 
-```bash
-rm -rf .git
-```
+#### App Images:
+![](images/Landing-Page.png)
+![](images/How-it-works.png)
+![](images/Pathways.png)
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
 
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Use the GitHub CLI to create a new project repository on GitHub:
-
-```bash
-gh repo create <name-of-your-app-here> --public --confirm
-```
-
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-Then, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL` and `SECRET` with values that you provide.
-
-Delete this README.md
-
-You're done!
