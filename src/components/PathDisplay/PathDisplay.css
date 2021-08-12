@@ -41,12 +41,27 @@
     width: 100%;
     padding: 0 15px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.6em 0.6em 0.5em #020d1b;
+
+
+  }
+
+  .image-banner{
+   height: 400px;
   }
 
 
 
   .path-display{
       background-color: var(--tt-dark-blue);
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
   }
   
   .skill-display{
