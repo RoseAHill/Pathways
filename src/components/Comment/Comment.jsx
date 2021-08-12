@@ -13,7 +13,6 @@ import{
 } from '../../services/commentService'
 
 const Comment = (props) => {
-    console.log(props.currentUser, props.author)
     const [currentRefLink, setCurrentRefLink] = useState(props.refLink)
     const [newRefLink, setNewRefLink] = useState('')
 
@@ -43,7 +42,6 @@ const Comment = (props) => {
             <p className="comment-content">
                 {props.content}
             </p>
-            {/* TODO: make a reference button component */}
             {props.refLink &&
                 <a href={currentRefLink} rel="noreferrer" target="_blank">Provided Reference</a>
             }
@@ -59,6 +57,7 @@ const Comment = (props) => {
             currentUser={props.currentUser}
             commentAuthor={props.author}
             handleDeleteComment={props.handleDeleteComment}
+            commentId={props.commentId}
             /></>
             }
 

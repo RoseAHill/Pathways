@@ -2,7 +2,6 @@ import * as tokenService from './tokenService'
 const BASE_URL = '/api/milestones/'
 
 export const createComment = async (milestoneId, comment) => {
-    console.log(comment);
     try {
         const res = await fetch(`${BASE_URL}${milestoneId}/comments`, { //might need to fix this path
             method: 'POST',

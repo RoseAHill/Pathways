@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // services
 import { createComment, deleteComment} from '../../services/commentService'
@@ -12,9 +12,20 @@ import './Milestone.css'
 
 const Milestone = ({ title, description, comments, currentUser, milestoneId }) => {
   
-  const commentList = comments.map((comment, index) => {
+  const [commentsArray, setCommentsArray] = useState([...comments])
+  
+  
+  const handleDeleteComment = async (commentId) => {
+    try {
+      await deleteComment(milestoneId, commentId)
+      setCommentsArray(commentsArray.filter(comment => comment._id !== commentId))
+    } catch (error) {
+      throw error
+    }
+  }
+  
+  const commentList = commentsArray.map((comment, index) => {
     return (<Comment
-      // handleUpdateCommentLink={handleUpdateCommentLink}
       key={index}
       handleDeleteComment={handleDeleteComment}
       commentId={comment._id}
@@ -22,27 +33,17 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
       currentUser={currentUser}
       content={comment.content}
       refLink={comment.refLink}
-      author={comment.author}//TODO: find author on backend
-    />)
-  })
-
+      author={comment.author}
+      />)
+    })
   const handleCreateComment = async (id, formData) => {
-    console.log("this is a test", id, formData)
     try {
-      await createComment(id, formData)
+      const res = await createComment(id, formData)
+      setCommentsArray([...commentsArray, res])
     } catch (error) {
       throw error
     }
   }
-
-  const handleDeleteComment = async (commentId) => {
-    try {
-      await deleteComment(milestoneId, commentId)
-    } catch (error) {
-      throw error
-    }
-  }
-
   return (
     <div className="milestone">
       <div className="milestone-info">

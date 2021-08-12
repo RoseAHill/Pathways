@@ -5,8 +5,8 @@ const DeleteButton = (props) => {
         <div className="delete-buttons">
             {
                 props.currentUser &&
-                props.currentUser.profile === props.comment.commenter._id &&
-                <button onClick={() => props.handleDeleteComment(props.comment._id)}>
+                props.currentUser.profile === props.commentAuthor &&
+                <button onClick={() => props.handleDeleteComment(props.commentId)}>
                     🗑
                 </button>
             }
