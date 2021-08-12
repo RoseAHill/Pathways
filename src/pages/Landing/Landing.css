@@ -93,4 +93,48 @@ img {
   min-height: 100vh;
 }
 
+@media (max-width: 991px){
+.home-text h1{
+  font-size: 40px;
+}
+.home-text h2{
+  font-size: 20px;
+}
+.home-img{
+  margin-top: 60px;
+}
+.instruction-item,
+.home-objects
+{
+  width: calc(50% - 30px)
+}
+
+}
+
+@media (max-width: 767px){
+  .home-text,
+  .home-img{
+    width: 100%;
+  }
+  .home-text h1{
+    font-size: 35px;
+  }
+  .home-text h2{
+    font-size: 18px;
+  }
+  .section-title h2{
+    font-size: 30px;
+  }
+  .sec-padding {
+    padding: 70px 0;
+  }
+  
+}
+
+@media (max-width: 575px){
+  .instruction-item,
+  .home-objects{
+    width: calc(100% - 30%);
+  }
+}
 

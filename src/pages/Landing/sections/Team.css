@@ -63,6 +63,8 @@
    position: relative;
    margin-bottom: 20px;
    overflow: hidden;
+   transition: 0.7s;
+
 }
 /* .team-container .card .team-content .image img
 {
@@ -74,6 +76,9 @@
    object-fit: cover;
 } */
 
+.team-container .image:hover{
+   background-color: var(--tt-gold)
+}
  .info h4
 {
    color: #e0d9f3;

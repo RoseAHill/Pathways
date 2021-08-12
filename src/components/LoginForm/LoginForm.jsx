@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import './LoginForm.css'
 import * as authService from '../../services/authService'
+import Animation from "../../components/Animation/Animation"
 
 const LoginForm = (props) => {
   const history = useHistory()
@@ -29,7 +30,7 @@ const LoginForm = (props) => {
   return (
   <div className="signup-page">
     <div className="left-container">
-      <div className="form-container">
+      <div className="home-form-container">
         <div className="title-container">
           <h3>Please enter your login information</h3>
         </div>
@@ -96,7 +97,7 @@ const LoginForm = (props) => {
                     </div>
     </div>
     <div className="right-container">
-      THIS IS THE RIGHT CONTAINER
+      <Animation/>
     </div>
     </div>
   )
