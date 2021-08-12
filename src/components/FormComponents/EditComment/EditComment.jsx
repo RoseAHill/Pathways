@@ -14,9 +14,9 @@ const [showEditForm, setShowEditForm] = useState(false) //will trigger if we see
                     Edit Link
                 </button>
 
-        <form onSubmit={props.handleSubmit}  className={`edit-comment-form${!showEditForm && " hide-edit-form" }`}>
+        <form onSubmit={props.handleSubmit}  className={`edit-comment-form${!showEditForm && " hide-comment-form" }`}>
             {/* placeholder text of new link and button to submit */}
-            <label htmlFor="edit-comment-form">Edit Reference Link</label>
+            <label htmlFor="edit-comment-form">Edit</label>
             <input
             required
             autoComplete='off'

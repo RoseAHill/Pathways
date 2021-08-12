@@ -12,6 +12,7 @@ import{
 } from '../../services/commentService'
 
 const Comment = (props) => {
+    console.log(props.currentUser, props.author)
     const [currentRefLink, setCurrentRefLink] = useState(props.refLink)
     const [newRefLink, setNewRefLink] = useState('')
 
@@ -47,7 +48,7 @@ const Comment = (props) => {
             }
             {"-Pathways User"}
             {props.currentUser &&
-                props.currentUser._id === props.author && 
+                props.currentUser.profile === props.author && 
             <EditComment 
             handleSubmit={handleSubmit}
             newRefLink={newRefLink}

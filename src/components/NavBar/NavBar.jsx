@@ -48,12 +48,18 @@ function NavBar({ user, handleLogout }) {
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>   
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+      {/* If user is logged in show welcome and logout */}
 		  {/* PATHS */}
           <li className="nav-item">
             <Link to="/paths" className="nav-links" onClick={exitMobile}>
               OUR PATHS
             </Link>
+          </li>
+          <li className="nav-item">
+            <p className="user-guest-name">
+              Welcome{user ? `, ${user.name}` : ", Guest"}
+            </p>
           </li>
 		  {/* RESOURCES */}
           {/* <li className="nav-item">
@@ -68,13 +74,29 @@ function NavBar({ user, handleLogout }) {
             </Link>
           </li> */}
 		  {/* LOGIN */}
+      { user ? 
+        ( <>
           <li>
-            <Link to="/login" className="nav-links-mobile">
-              LOGIN
+            <Link to="" onClick={handleLogout} className="nav-links-mobile">
+              LOGOUT
             </Link>
           </li>
+        <Button linkTo="" title="LOGOUT" action={handleLogout} />
+        </>
+        )
+        :
+        (
+          <>
+            <li>
+              <Link to="/login" className="nav-links-mobile">
+                LOGIN
+              </Link>
+            </li>
+          <Button linkTo="/login" title="LOGIN" />
+          </>
+        )
+      }
         </ul>
-        <Button linkTo="/login" title="LOGIN" />
       </nav>
     </>
   );
