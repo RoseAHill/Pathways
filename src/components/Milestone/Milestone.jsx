@@ -45,24 +45,32 @@ const Milestone = ({ title, description, comments, currentUser, milestoneId }) =
     }
   }
   return (
-    <div className="milestone">
-      <div className="milestone-info">
-        <h3 className="milestone-title">{title}</h3>
-        <p className="milestone-description">{description}</p>
-      </div>
-      <div className="comment-section">
-        <div className="comments-list">
-          {commentList}
+    <>
+    <div className="tab">
+      <input id="tab" type="checkbox" />
+
+      {/* <div className="milestone"> */}
+      <label for="tab">
+        <div className="milestone-info">
+          <h3 className="milestone-title">{title}</h3>
+          <p className="milestone-description">{description}</p>
         </div>
-        <div className="add-comment">
-          <CreateComment
-          currentUser={currentUser}
-          handleCreateComment={handleCreateComment}
-          milestoneId={milestoneId}
-          />
+      </label>
+      <div class="tab-content">
+        <div className="comment-section">
+          <div className="comments-list">{commentList}</div>
         </div>
       </div>
     </div>
+    <div className="add-comment">
+      <CreateComment
+        currentUser={currentUser}
+        handleCreateComment={handleCreateComment}
+        milestoneId={milestoneId}
+      />
+    </div>
+    </>
+    
   )
 }
 
