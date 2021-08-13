@@ -17,9 +17,15 @@
 ![](images/Pathways-ERD.png)
 
 #### App Images:
+![](images/Create-User.png)
+![](images/Login-Page.png)
 ![](images/Landing-Page.png)
 ![](images/How-it-works.png)
 ![](images/Pathways.png)
+![](images/Skills-page.png)
+![](images/Milestone-page.png)
+![](images/Milestone-details.png)
+
 
 #### Credit: Home Cook Pathway Photo 
 - [goodfon](https://img2.goodfon.com/wallpaper/nbig/1/17/povar-produkty-pasta-gotovka.jpg)
@@ -52,9 +58,10 @@
 - lottiefiles.com
 
 #### Next Steps:
-- Option to delete milestone
+- Option to delete a milestone
 - Like feature on comments
 - Want users to be able to add their own pathway
+- Redirect to login before viewing milestones
 
 
 
